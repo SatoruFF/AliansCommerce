@@ -1,3 +1,3 @@
-# AliansCommerce
+# AllianceCommerce
 
 Alliance company landing
