@@ -1,0 +1,21 @@
+@import '../utils/tmp.scss';
+
+.catalog__wrapper {
+    
+}
+
+.catalog__title {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    @extend %titleFont;
+}
+
+.catalog__items {
+    padding: 20px;
+    @extend %gridTemplate;
+}
+

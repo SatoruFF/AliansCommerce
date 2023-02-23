@@ -1,0 +1,35 @@
+@import '../utils/tmp.scss';
+
+.leftSide {
+    width: 50%;
+
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    p {
+        @extend %titleFont;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+}
+
+.right__side {
+    @extend %centerTemplate;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.opisanie {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.work__wrapper {
+    padding: 20px;
+    display: flex;
+    p {
+        @extend %titleFont;
+    }
+} 

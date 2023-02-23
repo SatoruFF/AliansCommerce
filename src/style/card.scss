@@ -1,0 +1,30 @@
+@import '../utils/tmp.scss';
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s all ease;
+    img {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card__title {
+        margin: 10px;
+        margin-top: 7px;
+        font-weight: bold;
+        @extend %titleFont;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}

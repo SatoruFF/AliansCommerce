@@ -35,14 +35,13 @@ const Welcome = () => {
         <p className="content__title first">О компании</p>
             <div className="about__wrapper">
                 <img src={logo} alt="" />
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quibusdam. Excepturi eum voluptates id est consectetur velit corrupti accusantium reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p> Наша компания "Альянс" работает только с качественными материалами. Организация создана чтобы удовлетворить спрос других организаций или людей на бумажную продукцию. Мы имеем более 10 лет опыта в этой сфере и готовы предложить вам гарантию на наше качество.</p>
             </div>
       </div>
       <div className="privilege">
         <p className="content__title">Преимущества</p>
             <div className="priv__wrapper">
                 <div className="priv__item"> <img src={like} alt="" /> <p className="bold"> Ассортимент </p> <br /> <p> Огромный выбор товаров на любой вкус </p> </div>
-                <div className="priv__item"> <img src={garant} alt="" /> <p className="bold"> Гарантии </p> <br /> <p> Закрепленные договором гарантии качества </p>  </div>
                 <div className="priv__item"> <img src={speed} alt="" /> <p className="bold"> Скорость </p> <br /> <p> Быстрый подбор необходимых вам материалов </p>  </div>
                 <div className="priv__item"> <img src={health} alt="" /> <p className="bold"> Безопасность </p> <br /> <p> Ответсвенность за соблюдение <br /> норм хранения и транспортировки материалов </p>  </div>
             </div>
