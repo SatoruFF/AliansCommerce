@@ -3,7 +3,7 @@ import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts"
 import { NavLink } from "react-router-dom";
 import "../style/navbar.scss";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navigation">
@@ -21,4 +21,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+//export default Navbar;
