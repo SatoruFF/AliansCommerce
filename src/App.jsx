@@ -1,11 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import AppRouter from "./components/AppRouter";
+import './utils/reset.scss'
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar></NavBar>
+      <Navbar></Navbar>
       <AppRouter></AppRouter>
     </BrowserRouter>
   );

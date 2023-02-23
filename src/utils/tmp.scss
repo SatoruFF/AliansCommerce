@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+%mainFont {
+    font-family: 'Playfair Display', serif;
+}
+
+%titleFont {
+    //font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+%centerTemplate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+%gridTemplate {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}

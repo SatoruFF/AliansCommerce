@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
+import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts";
+import { NavLink } from "react-router-dom";
+import "../style/navbar.scss";
 
-const NavBar = () => {
-    return (
-        <navbar className='navbar'>
-            <h1>Hello World</h1>
-        </navbar>
-    );
-}
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <div className="navigation">
+        <div className="navbar__item">
+            <NavLink to={WELCOME__ROUTE}>Главная</NavLink>
+        </div>
+        <div className="navbar__item">
+            <NavLink to={CATALOG__ROUTE}>Каталог</NavLink>
+        </div>
+        <div className="navbar__item">
+            <NavLink to={CONTACT__ROUTE}>Контакты</NavLink>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default NavBar;
+export default Navbar;

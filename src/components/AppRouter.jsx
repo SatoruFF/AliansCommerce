@@ -1,15 +1,17 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { WELCOME__ROUTE } from "../utils/consts";
-import { routes } from "../utils/routes";
+import Catalog from "../pages/Catalog";
+import Contacts from "../pages/Contacts";
+import Welcome from "../pages/welcome";
+import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts";
 
 const AppRouter = () => {
   return (
     <Routes>
-      {routes.map(({ path, page }) => {
-        <Route key={path} path={path} element={<page />}></Route>;
-      })}
-      {/* <Route path="/*" element={<Navigate replace to={WELCOME__ROUTE} />} /> */}
+      <Route key={WELCOME__ROUTE} path={WELCOME__ROUTE} element={<Welcome/>}></Route>
+      <Route key={CONTACT__ROUTE} path={CONTACT__ROUTE} element={<Contacts/>}></Route>
+      <Route key={CATALOG__ROUTE} path={CATALOG__ROUTE} element={<Catalog/>}></Route>
+      <Route path="/*" element={<Navigate replace to={WELCOME__ROUTE} />} />
     </Routes>
   );
 };

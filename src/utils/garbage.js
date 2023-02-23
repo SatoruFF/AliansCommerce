@@ -11,14 +11,18 @@ import {
 export const routes = [
     {
         path: WELCOME__ROUTE,
-        page: Welcome,
+        Component: Welcome,
     },
     {
         path: CATALOG__ROUTE,
-        page: Catalog,
+        Component: Catalog,
     },
     {
         path: CONTACT__ROUTE,
-        page: Contacts,
+        Component: Contacts,
     }
 ]
+
+{/* {routes.map(({ path, Component }) => {
+<Route key={path} path={path} element={<Component />}></Route>;
+})} */}
