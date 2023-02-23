@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import AppRouter from "./components/AppRouter";
+import Navbar from "./components/Navbar.jsx";
+import AppRouter from "./components/AppRouter.jsx";
 import './utils/reset.scss'
 
 function App() {
