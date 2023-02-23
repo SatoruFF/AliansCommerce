@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-//import MyNavbar from "./components/MyNavbar";
-import AppRouter from "./components/AppRouter";
+import Navbar from "./components/Navbar.jsx";
+import AppRouter from "./components/AppRouter.jsx";
 import './utils/reset.scss'
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <MyNavbar></MyNavbar> */}
+      <Navbar></Navbar>
       <AppRouter></AppRouter>
     </BrowserRouter>
   );

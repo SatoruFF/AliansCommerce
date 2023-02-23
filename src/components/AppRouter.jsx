@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Catalog from "../pages/Catalog";
-import Contacts from "../pages/Contacts";
-import Welcome from "../pages/welcome";
-import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts";
+import Catalog from "../pages/Catalog.jsx";
+import Contacts from "../pages/Contacts.jsx";
+import Welcome from "../pages/Welcome.jsx";
+import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts.js";
 
 const AppRouter = () => {
   return (

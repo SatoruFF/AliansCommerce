@@ -1,9 +1,9 @@
 import React from "react";
-import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts";
+import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts.js";
 import { NavLink } from "react-router-dom";
 import "../style/navbar.scss";
 
-const MyNavbar = () => {
+const Navbar = () => {
   return (
     <div className="navbar__wrapper">
       <div className="navigation">
@@ -21,4 +21,4 @@ const MyNavbar = () => {
   );
 };
 
-export default MyNavbar;
+export default Navbar;
