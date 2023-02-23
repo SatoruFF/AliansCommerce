@@ -8,13 +8,13 @@ const Navbar = () => {
     <div className="navbar__wrapper">
       <div className="navigation">
         <div className="navbar__item">
-            <NavLink to={WELCOME__ROUTE}>Главная</NavLink>
+            <NavLink className='navLink' to={WELCOME__ROUTE}>Главная</NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink to={CATALOG__ROUTE}>Каталог</NavLink>
+            <NavLink className='navLink' to={CATALOG__ROUTE}>Каталог</NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink to={CONTACT__ROUTE}>Контакты</NavLink>
+            <NavLink className='navLink' to={CONTACT__ROUTE}>Контакты</NavLink>
         </div>
       </div>
     </div>

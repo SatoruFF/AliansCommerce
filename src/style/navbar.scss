@@ -18,9 +18,13 @@
     a {
         color: black;
         text-decoration: none;
-        //border-bottom: 1px solid black;
-        @extend %titleFont
+        font-size: 19px;
+        @extend %titleFont;
     }
+}
+
+.navLink:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 992px) {

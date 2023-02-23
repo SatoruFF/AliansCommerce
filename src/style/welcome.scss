@@ -82,6 +82,39 @@
 .privilege {
     height: 100vh;
     background-color: black;
+    overflow: hidden;
+}
+
+.priv__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.priv__item {
+    //border: 1px solid white;
+    margin-top: 150px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    p {
+        margin-top: 30px;
+        color: white;
+        @extend %mainFont;
+    }
+}
+
+.bold {
+    font-weight: bold;
 }
 
 @keyframes arrow {
@@ -100,8 +133,22 @@
         p {
             width: 90%;
         }
+    }
     .about {
         height: auto;
     }
+    .privilege {
+        height: auto;
+    }
+    .priv__wrapper {
+        flex-direction: column;
+    }
+    .priv__item {
+        margin-top: 30px;
+    }
+    .priv__item {
+        p {
+            padding: 20px;
+        }
     }
 }
