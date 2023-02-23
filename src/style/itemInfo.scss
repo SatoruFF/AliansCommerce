@@ -29,7 +29,16 @@
 .work__wrapper {
     padding: 20px;
     display: flex;
+    flex-direction: row;
     p {
         @extend %titleFont;
     }
 } 
+
+
+@media screen and (max-width: 992px) {
+    .work__wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+}
