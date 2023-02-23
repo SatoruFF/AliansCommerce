@@ -92,3 +92,16 @@
         transform: translateY(25px);
     }
 }
+
+@media screen and (max-width: 992px) {
+    .about__wrapper {
+        flex-direction: column;
+        height: auto;
+        p {
+            width: 90%;
+        }
+    .about {
+        height: auto;
+    }
+    }
+}

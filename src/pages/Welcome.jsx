@@ -29,7 +29,7 @@ const Welcome = () => {
         <p className="content__title first">О компании</p>
             <div className="about__wrapper">
                 <img src={logo} alt="" />
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quibusdam. Excepturi eum voluptates id est consectetur velit corrupti accusantium reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem autem unde laudantium, placeat quod hic eveniet aspernatur ipsum. Dolores reprehenderit accusamus aliquam voluptas eligendi, enim ducimus itaque odio minus. </p>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quibusdam. Excepturi eum voluptates id est consectetur velit corrupti accusantium reprehenderit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
       </div>
       <div className="privilege">
