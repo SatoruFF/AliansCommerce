@@ -3,9 +3,9 @@ import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts"
 import { NavLink } from "react-router-dom";
 import "../style/navbar.scss";
 
-const Navbar = () => {
+const MyNavbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar__wrapper">
       <div className="navigation">
         <div className="navbar__item">
             <NavLink to={WELCOME__ROUTE}>Главная</NavLink>
@@ -21,4 +21,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MyNavbar;
