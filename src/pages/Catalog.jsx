@@ -11,7 +11,6 @@ const Catalog = () => {
     const navigate = useNavigate()
 
     const redir = (id) => {
-        console.log(id)
         navigate(CATALOG__ROUTE + '/' + id)
     }
     
@@ -19,8 +18,8 @@ const Catalog = () => {
         <div className='catalog__wrapper'>
             <div className="catalog__title">Наша продукция</div>
                 <div className="catalog__items animate__animated animate__fadeInUp">
-                    {papers.map(({id, title, img}) => 
-                        <Card key={id} id={id} redir={redir} img={img}>{title}</Card>
+                    {papers.map(({id, title, images}) => 
+                        <Card key={id} id={id} redir={redir} img={images[0].img}>{title}</Card>
                     )}
                 </div>
         </div>
