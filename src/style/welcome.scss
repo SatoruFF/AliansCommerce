@@ -161,10 +161,6 @@
         .three {
             background: url('../assets/paper/5/1.jpg') no-repeat center center;
         }
-
-        .four {
-            background: url('../assets/paper/4/1.jpg') no-repeat center center;
-        }
     }
 }
 
@@ -189,7 +185,7 @@
         }
     }
     .about {
-        height: auto;
+        height: auto !important;
     }
     .privilege {
         height: auto;
@@ -200,6 +196,18 @@
     .priv__item {
         margin-top: 30px;
     }
+
+    .carousel__space {
+        height: 100%;
+    }
+
+    .carousel {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        height: auto !important;
+    }
+
     .priv__item {
         p {
             padding: 20px;

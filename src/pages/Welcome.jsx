@@ -83,9 +83,6 @@ const Welcome = () => {
               <div>
                 <h3 className='carousel__item three'>Эколин</h3>
               </div>
-              <div>
-                <h3 className='carousel__item four'>Упаковочная бумага</h3>
-              </div>
             </Carousel>
           </div>
         </div>
