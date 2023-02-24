@@ -6,10 +6,10 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 const Contacts = () => {
   return (
-    <div>
+    <div className="main__space__contact">
       <div className="contacts__title">Заинтересовала наша продукция?</div>
       <div className="contacts__wrapper">
-        <div className="left__side">
+        <div className="contacts__left__side">
           <div className="inf">
             <Typography>
               <Title> Контакты и реквизиты организации ООО "Альянс":</Title>
@@ -30,12 +30,11 @@ const Contacts = () => {
             </Typography>
           </div>
         </div>
-        <div className="right__side">
+        <div className="contacts__right__side">
           <div className="map__title">
-            {" "}
             <Typography>
               <Title level={2}>Мы на картах:</Title>
-            </Typography>{" "}
+            </Typography>
           </div>
           <div className="map">
             <iframe

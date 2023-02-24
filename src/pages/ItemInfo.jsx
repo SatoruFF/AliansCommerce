@@ -23,13 +23,13 @@ const ItemInfo = () => {
       {currentItem !== null ? (
         <div className="work">
           <div className="work__wrapper">
-            <div className="leftSide">
+            <div className="itemInfo__left__side">
               <div className="image">
                 <img src={currentItem.images[0].img} alt="" />
               </div>
               <div className="item__title">{currentItem.title}</div>
             </div>
-            <div className="right__side">
+            <div className="itemInfo__right__side">
               <p className="opisanie">Описание</p>
               <div className="item__description">
                 <p>{currentItem.description}</p>
