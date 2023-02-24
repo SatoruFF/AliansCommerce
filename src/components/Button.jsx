@@ -1,12 +1,13 @@
 import React from 'react'
 import '../style/button.scss'
+import { Button, Space } from 'antd';
 
-const Button = ({...props}) => {
+const MyButton = ({...props}) => {
     return (
-        <div className='btn'>
-            <p className='btnItem' onClick={() => props.redir(props.id)}>{props.children}</p>
-        </div>
+        <Space>
+            <Button className='btn' onClick={() => props.redir(props.id)}>{props.children}</Button>
+        </Space>
     );
 }
 
-export default Button;
+export default MyButton;

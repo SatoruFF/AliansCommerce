@@ -9,12 +9,12 @@ import speed from '../assets/download-speed.png';
 import health from '../assets/health.png';
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Carousel } from "antd";
 
 const Welcome = () => {
   return (
     <div className="wrapper">
       <div className="main">
-        {/* <p className='main__icon'> <img src={logo} alt="Альянс" /> </p> */}
         <p className="text__title">Альянс</p>
         <p className="main__title">
           Бумага разных сортов и видов <br /> Мы поставляем качественную бумагу
@@ -45,6 +45,10 @@ const Welcome = () => {
                 <div className="priv__item"> <img src={speed} alt="" /> <p className="bold"> Скорость </p> <br /> <p> Быстрый подбор необходимых вам материалов </p>  </div>
                 <div className="priv__item"> <img src={health} alt="" /> <p className="bold"> Безопасность </p> <br /> <p> Ответсвенность за соблюдение <br /> норм хранения и транспортировки материалов </p>  </div>
             </div>
+      </div>
+      <div className="products">
+        <div className="products__title">Что мы вам предлагаем?</div>
+          
       </div>
     </div>
   );

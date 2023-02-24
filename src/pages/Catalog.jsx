@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../style/catalog.scss'
 import Card from '../components/Card.jsx'
 import { papers } from '../model/papers.js'
 import { useNavigate } from 'react-router-dom'
 import { CATALOG__ROUTE } from '../utils/consts'
+
 
 
 const Catalog = () => {

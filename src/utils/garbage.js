@@ -26,3 +26,14 @@ export const routes = [
 {/* {routes.map(({ path, Component }) => {
 <Route key={path} path={path} element={<Component />}></Route>;
 })} */}
+
+
+<Image
+preview={{ visible: false }}
+//width={200}
+src={props.images[0]}
+onClick={() => setVisible(true)}
+/>
+
+import { Image } from 'antd';
+const [visible, setVisible] = useState(false);

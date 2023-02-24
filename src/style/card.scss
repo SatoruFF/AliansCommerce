@@ -1,19 +1,18 @@
 @import '../utils/tmp.scss';
 
 .card {
+    overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 15px;
     text-align: center;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transition: 1s all ease;
-    img {
-        width: 150px;
-        height: 150px;
-        margin-top: 10px;
+    .img {
+        height: 60%;
+        width: 100%;
         margin-bottom: 10px;
     }
     .card__title {
@@ -25,6 +24,6 @@
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition-duration: 1s;
 }

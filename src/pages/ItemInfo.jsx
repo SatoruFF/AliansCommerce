@@ -37,9 +37,10 @@ const ItemInfo = () => {
             </div>
           </div>
           <div className="other">
-            {/* {currentItem.images.map((item) => 
-            <DescriptionCard key={Math.random()} img={item}></DescriptionCard>
-            )} */}
+            {currentItem.images.map((item) => {
+              <DescriptionCard key={Math.random()} img={item}></DescriptionCard>
+            }
+            )}
           </div>
         </div>
       ) : (

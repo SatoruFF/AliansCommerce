@@ -2,6 +2,7 @@ import React from "react";
 import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts.js";
 import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.scss";
+import { Button } from "antd";
 
 const Navbar = () => {
 
@@ -11,13 +12,13 @@ const Navbar = () => {
     <div className="navbar__wrapper">
       <div className="navigation">
         <div className="navbar__item">
-            <NavLink className={where.pathname == WELCOME__ROUTE ? 'navLink clicked' : 'navLink'} to={WELCOME__ROUTE}>Главная</NavLink>
+            <NavLink to={WELCOME__ROUTE}><Button type={where.pathname == WELCOME__ROUTE ? 'primary' : 'text'}>Главная</Button></NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink className={where.pathname == CATALOG__ROUTE ? 'navLink clicked' : 'navLink'} to={CATALOG__ROUTE}>Каталог</NavLink>
+            <NavLink to={CATALOG__ROUTE}><Button type={where.pathname == CATALOG__ROUTE ? 'primary' : 'text'}>Каталог</Button></NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink className={where.pathname == CONTACT__ROUTE ? 'navLink clicked' : 'navLink'} to={CONTACT__ROUTE}>Контакты</NavLink>
+            <NavLink to={CONTACT__ROUTE}><Button type={where.pathname == CONTACT__ROUTE ? 'primary' : 'text'}>Контакты</Button></NavLink>
         </div>
       </div>
     </div>
