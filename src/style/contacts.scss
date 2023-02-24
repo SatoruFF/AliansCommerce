@@ -1,12 +1,60 @@
 @import '../utils/tmp.scss';
 
 .contacts__title {
-    text-align: center;
-    margin: 30px 0;
-    font-size: 24px;
+    font-size: 23px;
+    height: 70px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    @extend %centerTemplate;
     @extend %titleFont
 }
 
+.contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .inf {
+    margin-bottom: 30px; //!!!
     @extend %titleFont
+}
+
+.left__side {
+    width: 50%;
+    @extend %centerTemplate;
+}
+
+.right__side {
+    width: 50%;
+
+    .map__title {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        height: 85%;
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: 0;
+            border-radius: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+ .contacts__wrapper {
+    flex-direction: column;
+ }
+ .left__side {
+    width: 100%;
+ }
+ .right__side {
+    width: 100%;
+ }
 }

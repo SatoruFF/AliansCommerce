@@ -1,30 +1,30 @@
-import React, {useState} from 'react'
-import '../style/catalog.scss'
-import Card from '../components/Card.jsx'
-import { papers } from '../model/papers.js'
-import { useNavigate } from 'react-router-dom'
-import { CATALOG__ROUTE } from '../utils/consts'
-
-
+import React, { useState } from "react";
+import "../style/catalog.scss";
+import Card from "../components/Card.jsx";
+import { papers } from "../model/papers.js";
+import { useNavigate } from "react-router-dom";
+import { CATALOG__ROUTE } from "../utils/consts";
+import { Spin } from "antd";
 
 const Catalog = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate()
+  const redir = (id) => {
+    navigate(CATALOG__ROUTE + "/" + id);
+  };
 
-    const redir = (id) => {
-        navigate(CATALOG__ROUTE + '/' + id)
-    }
-    
-    return (
-        <div className='catalog__wrapper'>
-            <div className="catalog__title">Наша продукция</div>
-                <div className="catalog__items animate__animated animate__fadeInUp">
-                    {papers.map(({id, title, images}) => 
-                        <Card key={id} id={id} redir={redir} img={images[0].img}>{title}</Card>
-                    )}
-                </div>
+  return (
+        <div className="catalog__wrapper">
+          <div className="catalog__title">Наша продукция</div>
+          <div className="catalog__items animate__animated animate__fadeInUp">
+            {papers.map(({ id, title, images }) => (
+              <Card key={id} id={id} redir={redir} img={images[0].img}>
+                {title}
+              </Card>
+            ))}
+          </div>
         </div>
-    );
-}
+  );
+};
 
 export default Catalog;

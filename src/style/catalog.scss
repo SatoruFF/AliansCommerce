@@ -5,13 +5,12 @@
 }
 
 .catalog__title {
-    text-align: center;
+    height: 70px;
     color: white;
     background-color: black;
     opacity: 0.8;
-    padding: 15px;
     font-size: 23px;
-    // font-weight: bold;
+    @extend %centerTemplate;
     @extend %titleFont;
 }
 
