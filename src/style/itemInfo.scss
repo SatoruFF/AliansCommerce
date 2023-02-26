@@ -101,12 +101,21 @@
         margin: 30px 0;
     }
     .itemInfo__right__side {
-        border-top: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: auto;
+        margin-right: 0;
+        margin: auto;
     }
     .work__wrapper {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
+        .work__wrapper__space {
+            flex-direction: column;
+        }
     }
 }
