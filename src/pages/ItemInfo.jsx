@@ -7,7 +7,7 @@ import DescriptionCard from "../components/DescriptionCard.jsx";
 
 const ItemInfo = () => {
   const [currentItem, setCurrentItem] = useState(null);
-  const [pic, setPic] = useState(null)
+  // const [pic, setPic] = useState(null)
 
   const itemId = useParams();
 
@@ -15,9 +15,10 @@ const ItemInfo = () => {
     papers.forEach((elem) => {
       if (elem.id == +itemId.id) {
         setCurrentItem(elem);
-      } if (currentItem) {
-        setPic(currentItem.images)
       }
+      // } if (currentItem) {
+      //   setPic(currentItem.images)
+      // }
     });
   }, [currentItem]);
 
@@ -47,12 +48,12 @@ const ItemInfo = () => {
             </div>
           </div>
           <div className="other">
-            {pic && pic.map((item) => {
+            {/* {pic && pic.map((item) => {
               <DescriptionCard
                 key={Math.random()}
                 img={item}
               ></DescriptionCard>;
-            })}
+            })} */}
           </div>
         </div>
       ) : (
