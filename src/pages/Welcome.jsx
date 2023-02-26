@@ -16,7 +16,7 @@ const { Title, Paragraph, Text } = Typography;
 const Welcome = () => {
   return (
     <div className="welcome__wrapper">
-      <div className="welcome__main">
+      <div className="welcome__main animate__animated animate__fadeInUp">
         <p className="welcome__brand__title">Альянс</p>
         <p className="welcome__main__title">
           Бумага разных сортов и видов <br /> Мы поставляем качественную бумагу
