@@ -33,7 +33,7 @@ const Contacts = () => {
         <div className="contacts__right__side animate__animated animate__fadeInRight">
           <div className="map__title">
             <Typography>
-              <Title level={2}>Мы на картах:</Title>
+              <Title level={2} className='map__title__text'>Мы на картах:</Title>
             </Typography>
           </div>
           <div className="map animate__animated animate__fadeInRightBig">
