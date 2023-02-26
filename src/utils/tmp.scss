@@ -7,13 +7,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 %mainFont {
-    font-family: 'Playfair Display', serif;
+    //font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 %titleFont {
     //font-family: 'Oswald', sans-serif;
     //font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+
+%titleBackground {
+    background-color: #595959;
+}
+
+%blockBackground {
+    background-color: #595959;
 }
 
 %centerTemplate {

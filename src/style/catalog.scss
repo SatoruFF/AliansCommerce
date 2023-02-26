@@ -1,15 +1,10 @@
 @import '../utils/tmp.scss';
 
-.catalog__wrapper {
-    margin-top: 10px;
-}
-
 .catalog__title {
     height: 70px;
     color: white;
-    background-color: black;
-    opacity: 0.8;
     font-size: 23px;
+    @extend %titleBackground;
     @extend %centerTemplate;
     @extend %titleFont;
 }

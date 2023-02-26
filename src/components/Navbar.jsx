@@ -12,13 +12,13 @@ const Navbar = () => {
     <div className="navbar__wrapper">
       <div className="navigation">
         <div className="navbar__item">
-            <NavLink to={WELCOME__ROUTE}><Button type={where.pathname == WELCOME__ROUTE ? 'primary' : 'text'}>Главная</Button></NavLink>
+            <NavLink to={WELCOME__ROUTE}><Button shape="round" size="large" type={where.pathname == WELCOME__ROUTE ? 'primary' : 'text'}>Главная</Button></NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink to={CATALOG__ROUTE}><Button type={where.pathname == CATALOG__ROUTE ? 'primary' : 'text'}>Каталог</Button></NavLink>
+            <NavLink to={CATALOG__ROUTE}><Button shape="round" size="large" type={where.pathname == CATALOG__ROUTE ? 'primary' : 'text'}>Каталог</Button></NavLink>
         </div>
         <div className="navbar__item">
-            <NavLink to={CONTACT__ROUTE}><Button type={where.pathname == CONTACT__ROUTE ? 'primary' : 'text'}>Контакты</Button></NavLink>
+            <NavLink to={CONTACT__ROUTE}><Button shape="round" size="large" type={where.pathname == CONTACT__ROUTE ? 'primary' : 'text'}>Контакты</Button></NavLink>
         </div>
       </div>
     </div>
