@@ -4,9 +4,7 @@
     font-size: 23px;
     height: 70px;
     color: white;
-    @extend %titleBackground;
-    @extend %centerTemplate;
-    @extend %titleFont
+    @extend %titleBackground, %centerTemplate, %titleFont;
 }
 
 .contacts__wrapper {
@@ -46,25 +44,22 @@
             border-radius: 15px;
         }
     }
+    .map {
+        margin-bottom: 20px;
+        margin: auto;
+        width: 375px !important;
+        height: 500px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        iframe {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 15px;
+            width: 100% !important;
+            height: 100% !important;
+    }
+    }
 }
-
-.map {
-    margin-bottom: 20px;
-    margin: auto;
-    width: 375px !important;
-    height: 500px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    iframe {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border-radius: 15px;
-        width: 100% !important;
-        height: 100% !important;
-}
-}
-
-
 
 @media screen and (max-width: 992px) {
  .contacts__wrapper {

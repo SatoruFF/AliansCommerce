@@ -34,7 +34,7 @@ const Welcome = () => {
         </Link>
       </div>
       <div className="welcome__about">
-        <p className="welcome__content__title first">О компании</p>
+        <p className="welcome__content__title">О компании</p>
         <div className="welcome__about__wrapper">
           <div className="welcome__about__logo">
             <img src={logo} alt="" />
@@ -64,7 +64,7 @@ const Welcome = () => {
               <img src={health} alt="" /> <p className="bold"> Безопасность </p>
               <br />
               <p>
-                Ответсвенность за соблюдение <br /> норм хранения и
+                Ответственность за соблюдение <br /> норм хранения и
                 транспортировки материалов
               </p>
             </div>

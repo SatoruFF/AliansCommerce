@@ -1,42 +1,58 @@
 @import '../utils/tmp.scss';
 
-.work__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    p {
-        line-height: 1.5;
-        @extend %titleFont;
-    }
-    .work__wrapper__space {
-        height: 100%;
-        width: 90%;
-        @extend %centerTemplate;
-    }
-} 
 
 .itemInfo__title__space {
     height: 70px;
+    position: sticky;
+    top: 10px;
+    opacity: 0.8;
     @extend %centerTemplate;
     .itemInfo__title {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         height: 80%;
         color: white;
         padding: 5px;
-        width: 90%;
-        //width: 200px;item
-        font-size: 23px;
+        width: 60%;
         border-radius: 15px;
-        @extend %titleFont, %titleBackground, %centerTemplate;
+        background-color: rgb(89, 89, 89, 0.7);
+        @extend %titleFont, %centerTemplate;
+    }
+    .itemInfo__anchor {
+        a {
+            padding: 5px;
+            color: white !important;
+            font-size: 18px;
+        }
     }
 }
 
+.work__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    border: 1px solid red;
+    p {
+        line-height: 1.5;
+        @extend %titleFont;
+    }
+    .work__wrapper__space {
+        height: 80vh;
+        width: 90%;
+        border-radius: 10px;
+        border: 3px solid teal;
+        overflow: hidden;
+        @extend %centerTemplate, %blockBackground;
+    }
+} 
+
 .itemInfo__left__side {
+    border: 3px solid green;
     margin-top: 15px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     @extend %centerTemplate;
     img{
         width: 300px;
@@ -53,11 +69,17 @@
     .item__title {
         text-align: center;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: bold;
         @extend %titleFont;
     }
     .itemInfo__left__side__card {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70%;
+        background-color: white;
         padding: 30px;
         border-radius: 15px;
     }
@@ -67,9 +89,11 @@
     @extend %centerTemplate;
     flex-direction: column;
     width: 55%;
+    height: 80%;
     flex-wrap: wrap;
     margin-right: 30px;
     .item__description {
+        background-color: white;
         padding: 30px;
         border-radius: 15px;
         height: 90%;
@@ -80,15 +104,15 @@
     }
 }
 
-.other {
+.variants {
     margin-top: 40px;
-    // padding: 20px;
-    // border: 1px solid red;
-    // height: 600px;
-    // background-color: aqua;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.other__products {
+    height: 100vh;
+    background-color: teal;
 }
 
 @media screen and (max-width: 992px) {
@@ -116,6 +140,7 @@
         height: auto;
         .work__wrapper__space {
             flex-direction: column;
+            height: auto;
         }
     }
 }
