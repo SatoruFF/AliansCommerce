@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
 import "../style/welcome.scss";
-//import logo from "../assets/AllianceMainLogo.jpg";
-import logo from "../assets/AllianceIcon.jpg";
+import logo from "../assets/AllianceMainLogo.jpg";
+//import logo from "../assets/AllianceIcon.jpg";
 import arrow from "../assets/arrow.png";
 
 import like from "../assets/like.png";
 import garant from "../assets/guarantee.png";
 import speed from "../assets/download-speed.png";
 import health from "../assets/health.png";
-
+ 
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Carousel, Typography } from "antd";
 const { Title, Paragraph, Text } = Typography;
