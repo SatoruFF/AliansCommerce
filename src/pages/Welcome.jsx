@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../style/welcome.scss";
-import logo from "../assets/AllianceMainLogo.jpg";
-// import logo from "../assets/AllianceIcon.jpg";
+//import logo from "../assets/AllianceMainLogo.jpg";
+import logo from "../assets/AllianceIcon.jpg";
 import arrow from "../assets/arrow.png";
 
 import like from "../assets/like.png";
