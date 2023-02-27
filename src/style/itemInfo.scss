@@ -31,7 +31,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
-    border: 1px solid red;
+    //border: 1px solid red;
     p {
         line-height: 1.5;
         @extend %titleFont;
@@ -40,14 +40,14 @@
         height: 80vh;
         width: 90%;
         border-radius: 10px;
-        border: 3px solid teal;
+        //border: 3px solid teal;
         overflow: hidden;
         @extend %centerTemplate, %blockBackground;
     }
 } 
 
 .itemInfo__left__side {
-    border: 3px solid green;
+    //border: 3px solid green;
     margin-top: 15px;
     width: 50%;
     display: flex;
