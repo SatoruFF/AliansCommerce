@@ -60,21 +60,22 @@
         height: 70%;
         border-radius: 10px;
         overflow: hidden;
+        // border: 1px solid red;
         @extend %blockBackground;
-        @extend %shadowTemplate;
-        border: 3px solid white;
         .carousel__item-main {
-            z-index: 10;
             border-radius: 5px;
-            height: 100% !important;
+            height: 355px;
             color: #fff;
             font-weight: bold;
-            line-height: 355px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             background: #060606;
             font-size: 32px;
             background-size: cover;
             @extend %titleFont;
+            @extend %shadowTemplate;
         }
         .carousel-item__one {
             background: url('../assets/paper/1/1.jpg') no-repeat center center;
@@ -90,6 +91,10 @@
             background-size: cover;
         }
     }
+}
+
+.welcome__anchor {
+    margin-bottom: 35px;
 }
 
 .main__arrow {
@@ -261,17 +266,11 @@
             padding: 10px;
         }
     }
-
-    // .products {
-    //     height: auto;
-    // }
-    // .carousel__space {
-    //     height: auto;
-    // }
-    // .carousel {
-    //     margin-top: 15px;
-    //     margin-bottom: 15px;
-    //     overflow: hidden;
-    //     height: auto !important;
-    // }
 }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    .carousel__item-main {
+        height: 700px;
+    }
+    }
