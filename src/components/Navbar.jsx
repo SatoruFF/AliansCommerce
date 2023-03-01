@@ -3,6 +3,7 @@ import { CATALOG__ROUTE, CONTACT__ROUTE, WELCOME__ROUTE } from "../utils/consts.
 import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.scss";
 import { Button } from "antd";
+import mainIcon from '../assets/AllianceIcon.jpg'
 
 const Navbar = () => {
 
@@ -11,6 +12,9 @@ const Navbar = () => {
   return (
     <div className="navbar__wrapper">
       <div className="navigation">
+        <div className="navbar__item navbar__logo">
+        <NavLink to={WELCOME__ROUTE}><img src={mainIcon} alt="" /></NavLink>
+        </div>
         <div className="navbar__item">
             <NavLink to={WELCOME__ROUTE}><Button shape="round" size="large" type={where.pathname == WELCOME__ROUTE ? 'primary' : 'text'}>Главная</Button></NavLink>
         </div>

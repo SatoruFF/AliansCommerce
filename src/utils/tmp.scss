@@ -1,28 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 %mainFont {
-    //font-family: 'Playfair Display', serif;
     font-family: 'Poppins', sans-serif;
 }
 
 %titleFont {
-    //font-family: 'Oswald', sans-serif;
-    //font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 
 %titleBackground {
-    background-color: #595959;
+    background-color: #1677ff;
 }
 
 %blockBackground {
-    background-color: #595959;
+    background-color: #262626;
 }
 
 %centerTemplate {
@@ -36,4 +28,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 3em;
+}
+
+%shadowTemplate {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

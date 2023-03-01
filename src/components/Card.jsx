@@ -8,6 +8,7 @@ const Card = ({ ...props }) => {
   return (
     <div className="card">
         <Image
+        preview={false}
         src={props.img}
         />
       <p className="card__title">{props.children}</p>
