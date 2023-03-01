@@ -5,22 +5,21 @@
     height: 70px;
     position: sticky;
     top: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
     @extend %centerTemplate;
     .itemInfo__title {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         height: 80%;
         color: white;
         padding: 5px;
         width: 60%;
         border-radius: 15px;
-        background-color: rgb(89, 89, 89, 0.7);
-        @extend %titleFont, %centerTemplate;
+        @extend %titleFont, %centerTemplate, %titleBackground, %shadowTemplate;
     }
-    .itemInfo__anchor {
-        a {
-            padding: 5px;
-            color: white !important;
+    .itemInfo__title__navigation {
+        display: flex;
+        .item-info__nav-item {
+            padding: 10px;
+            cursor: pointer;
             font-size: 18px;
         }
     }
@@ -31,23 +30,19 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
-    //border: 1px solid red;
     p {
         line-height: 1.5;
         @extend %titleFont;
     }
     .work__wrapper__space {
         height: 80vh;
-        width: 90%;
-        border-radius: 10px;
-        //border: 3px solid teal;
+        width: 100%;
         overflow: hidden;
         @extend %centerTemplate, %blockBackground;
     }
 } 
 
 .itemInfo__left__side {
-    //border: 3px solid green;
     margin-top: 15px;
     width: 50%;
     display: flex;
@@ -55,10 +50,8 @@
     height: 100%;
     @extend %centerTemplate;
     img{
-        width: 300px;
-        height: 300px;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        width: 400px;
+        height: 400px;
     }
     p {
         @extend %titleFont;
@@ -68,21 +61,17 @@
     }
     .item__title {
         text-align: center;
+        color: white;
         margin-top: 10px;
         font-size: 22px;
-        font-weight: bold;
         @extend %titleFont;
     }
     .itemInfo__left__side__card {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 70%;
-        background-color: white;
-        padding: 30px;
-        border-radius: 15px;
     }
+
 }
 
 .itemInfo__right__side {
@@ -92,20 +81,23 @@
     height: 80%;
     flex-wrap: wrap;
     margin-right: 30px;
+    .item-info-descr__title {
+        color: white;
+        font-size: 25px;
+        @extend %titleFont;
+    }
     .item__description {
-        background-color: white;
-        padding: 30px;
+        color: white;
         border-radius: 15px;
         height: 90%;
         word-wrap: break-word;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         font-size: 22px;
         @extend %centerTemplate, %mainFont;
+        text-align: start;
     }
 }
 
 .variants {
-    margin-top: 40px;
     height: 100vh;
     background-color: lightblue;
 }

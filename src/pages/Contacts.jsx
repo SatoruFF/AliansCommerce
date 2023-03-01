@@ -28,8 +28,9 @@ const Contacts = () => {
                 +7 (917) 270-09-99 | +7 (958) 136-92-02 | +7 (958) 136-07-08
               </Text>
               <br />
-              <Text strong>
-                email: alyansbum@mail.ru
+              <Title level={3}>Email:</Title>
+              <Text copyable>
+                alyansbum@mail.ru
               </Text>
             </Typography>
           </div>

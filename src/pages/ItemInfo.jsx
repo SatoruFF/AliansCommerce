@@ -5,6 +5,7 @@ import "../style/itemInfo.scss";
 import { papers } from "../model/papers.js";
 import { Anchor } from "antd";
 import DescriptionCard from "../components/DescriptionCard.jsx";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const ItemInfo = () => {
   const [currentItem, setCurrentItem] = useState(null);
@@ -30,27 +31,36 @@ const ItemInfo = () => {
           <div className="itemInfo__title__space">
             <div className="itemInfo__title">
               <div className="itemInfo__title__navigation">
-                <Anchor
-                  className="itemInfo__anchor"
-                  direction="horizontal"
-                  items={[
-                    {
-                      key: "part-1",
-                      href: "#part-1",
-                      title: "Описание",
-                    },
-                    {
-                      key: "part-2",
-                      href: "#part-2",
-                      title: "Характеристики",
-                    },
-                    {
-                      key: "part-3",
-                      href: "#part-3",
-                      title: "Другие продукты",
-                    },
-                  ]}
-                />
+                <Link
+                  activeClass="active"
+                  to="work"
+                  spy={true}
+                  className="item-info__nav-item"
+                  smooth={true}
+                  duration={500}
+                >
+                  <p>Описание</p>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="variants"
+                  spy={true}
+                  className="item-info__nav-item"
+                  smooth={true}
+                  duration={500}
+                >
+                  <p>Характеристики</p>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="other__products"
+                  spy={true}
+                  className="item-info__nav-item"
+                  smooth={true}
+                  duration={500}
+                >
+                  <p>Другие продукты</p>
+                </Link>
               </div>
             </div>
           </div>
@@ -61,10 +71,13 @@ const ItemInfo = () => {
                   <div className="image">
                     <img src={currentItem.images[0].img} alt="" />
                   </div>
-                  <div className="item__title">{currentItem.title}</div>
+                  {/* <div className="item__title">{currentItem.title}</div> */}
                 </div>
               </div>
               <div className="itemInfo__right__side">
+                <div className="item-info-descr__title">
+                  {currentItem.title}
+                </div>
                 <div className="item__description">
                   <p>{currentItem.description}</p>
                 </div>
@@ -79,9 +92,7 @@ const ItemInfo = () => {
               ></DescriptionCard>;
             })} */}
           </div>
-          <div className="other__products" id="part-3">
-
-          </div>
+          <div className="other__products" id="part-3"></div>
         </div>
       ) : (
         <h1>
