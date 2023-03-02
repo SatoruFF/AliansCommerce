@@ -73,10 +73,10 @@ const ItemInfo = () => {
             </div>
             {currentItem.character && (
               <div className="variants" id="part-2">
+                <div className="variants__title">
+                  <p>Характеристики</p>
+                </div>
                 <div className="variants-content content">
-                  <div className="variants__title">
-                    <p>Характеристики</p>
-                  </div>
                   <div className="variants-text__space">
                     <div className="variants-text">
                       <Typography>
