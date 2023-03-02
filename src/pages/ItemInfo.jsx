@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "../style/itemInfo.scss";
 import { papers } from "../model/papers.js";
 import MyFooter from "../components/Footer.jsx";
-import { Carousel } from "antd";
+import { Carousel, Typography } from "antd";
 import { Anchor } from "antd";
+const { Title, Paragraph, Text } = Typography;
 
 const ItemInfo = () => {
   const [currentItem, setCurrentItem] = useState(null);
@@ -41,11 +41,6 @@ const ItemInfo = () => {
                     href: "#part-2",
                     title: "Характеристики",
                   },
-                  {
-                    key: "part-3",
-                    href: "#part-3",
-                    title: "Смотрите так же",
-                  },
                 ]}
               />
             </div>
@@ -76,14 +71,24 @@ const ItemInfo = () => {
                 </div>
               </div>
             </div>
-            <div className="variants" id="part-2">
-              <div className="variants-content content">
-                <div className="variants__title">
-                  <p>Характеристики</p>
+            {currentItem.character && (
+              <div className="variants" id="part-2">
+                <div className="variants-content content">
+                  <div className="variants__title">
+                    <p>Характеристики</p>
+                  </div>
+                  <div className="variants-text__space">
+                    <div className="variants-text">
+                      <Typography>
+                        <Paragraph className="variats-text__p">
+                          {currentItem.character}
+                        </Paragraph>
+                      </Typography>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="other__products" id="part-3"></div>
+            )}
             <MyFooter></MyFooter>
           </div>
         </div>
