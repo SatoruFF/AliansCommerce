@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../style/catalog.scss";
-import Card from "../components/Card.jsx";
-import { papers } from "../model/papers.js";
+
 import { useNavigate } from "react-router-dom";
 import { CATALOG__ROUTE } from "../utils/consts";
 import MyFooter from "../components/Footer.jsx";
+import MyGallery from "../components/Gallery.jsx";
 const Catalog = () => {
   const navigate = useNavigate();
 
@@ -16,13 +16,7 @@ const Catalog = () => {
     <div className="catalog__wrapper">
       <div className="catalog__content">
         <div className="catalog__title">Наша продукция</div>
-        <div className="catalog__items animate__animated animate__fadeInUp">
-          {papers.map(({ id, title, images }) => (
-            <Card key={id} id={id} redir={redir} img={images[0].img}>
-              {title}
-            </Card>
-          ))}
-        </div>
+        <MyGallery redir={redir}></MyGallery>
       </div>
       <MyFooter></MyFooter>
     </div>

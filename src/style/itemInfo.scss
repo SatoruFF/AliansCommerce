@@ -1,41 +1,33 @@
 @import '../utils/tmp.scss';
 
 
-.itemInfo__title__space {
-    height: 70px;
-    position: sticky;
-    top: 10px;
-    opacity: 0.7;
-    @extend %centerTemplate;
-    .itemInfo__title {
-        height: 80%;
-        color: white;
+// Anchor
+.item-info__navigation {
+    position: absolute;
+    z-index: 10;
+
+    a {
+        border: 1px solid #1677ff;
         padding: 5px;
-        width: 60%;
-        border-radius: 15px;
-        @extend %titleFont, %centerTemplate, %titleBackground, %shadowTemplate;
-    }
-    .itemInfo__title__navigation {
-        display: flex;
-        .item-info__nav-item {
-            padding: 10px;
-            cursor: pointer;
-            font-size: 18px;
-        }
+        text-align: start;
+        color: white !important;
+        @extend %mainFont;
     }
 }
 
+
+// First slide
 .work__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 8px;
     p {
         line-height: 1.5;
         @extend %titleFont;
     }
     .work__wrapper__space {
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         overflow: hidden;
         @extend %centerTemplate, %blockBackground;
@@ -43,70 +35,73 @@
 } 
 
 .itemInfo__left__side {
-    margin-top: 15px;
+    height: 80%;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     @extend %centerTemplate;
-    img{
-        width: 400px;
-        height: 400px;
+    //carousel
+    .image {
+        width: 350px;
+        height: 300px;
     }
-    p {
-        @extend %titleFont;
-        text-align: center;
-        margin-top: 30px;
-        font-weight: bold;
+    .itemInfo__left__carousel-space {
+        height: auto;
+        overflow: hidden;
     }
-    .item__title {
-        text-align: center;
-        color: white;
-        margin-top: 10px;
-        font-size: 22px;
-        @extend %titleFont;
+    img {
+        width: 350px;
+        height: 300px;
     }
-    .itemInfo__left__side__card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
 }
 
 .itemInfo__right__side {
+    position: relative;
     @extend %centerTemplate;
+    align-items: flex-start;
+    text-align: start;
     flex-direction: column;
     width: 55%;
     height: 80%;
     flex-wrap: wrap;
     margin-right: 30px;
     .item-info-descr__title {
+        border: 1px solid #1677ff;
+        padding: 10px;
         color: white;
         font-size: 25px;
         @extend %titleFont;
     }
+    .item-info-descr__title:hover {
+        transform: scale(1.02);
+        transition-duration: 0.3s;
+        cursor: default;
+    }
     .item__description {
         color: white;
         border-radius: 15px;
-        height: 90%;
+        height: auto;
+        margin-top: 50px;
         word-wrap: break-word;
-        font-size: 22px;
+        font-size: 18px;
         @extend %centerTemplate, %mainFont;
         text-align: start;
     }
 }
 
+
+// Second slide
 .variants {
     height: 100vh;
     background-color: lightblue;
 }
 
+// Third side
 .other__products {
     height: 100vh;
     background-color: teal;
 }
 
+
+//adaptive
 @media screen and (max-width: 992px) {
     .itemInfo__left__side {
         width: 100%;
@@ -135,6 +130,11 @@
             height: auto;
         }
     }
+    .itemInfo__title__navigation {
+        flex-direction: column;
+    }
+    .itemInfo__title__space {
+        height: auto;
+        justify-content: flex-end;
+    }
 }
-
-
