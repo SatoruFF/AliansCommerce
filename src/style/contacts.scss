@@ -2,6 +2,7 @@
 
 .main__space__contact {
     width: 100%;
+    min-height: 100vh;
     @extend %blockBackground;
 }
 
@@ -10,17 +11,16 @@
 }
 
 .contacts__wrapper {
-    height: 100vh;
-    @extend %blockBackground;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @extend %blockBackground;
 }
 
 .inf {
-    margin-bottom: 30px;
     width: 90%;
-    word-wrap: break-word;
     @extend %titleFont;
     h1,
     h3,
@@ -33,11 +33,13 @@
     width: 50%;
     padding: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contacts__right__side {
     width: 50%;
-
     .map__title {
         margin-top: 15px;
         text-align: center;
@@ -48,27 +50,22 @@
     }
 
     .map {
-        margin-bottom: 20px;
-        width: 375px !important;
-        height: 500px !important;
+        margin-bottom: 10px;
+        width: 375px;
+        height: 500px;
         margin: auto;
         @extend %centerTemplate;
 
         iframe {
             border-radius: 15px;
-            width: 100% !important;
-            height: 100% !important;
+            width: 100%;
+            height: 100%;
             @extend %shadowTemplate;
         }
     }
 }
 
 @media screen and (max-width: 992px) {
-    .contacts__wrapper {
-        width: 100vw;
-        height: 100vh;
-    }
-
     .contacts__wrapper {
         flex-direction: column;
         justify-content: space-around;
@@ -77,13 +74,13 @@
 
     .contacts__left__side {
         width: 100%;
-        height: 50%;
+        height: auto;
         padding: 0;
     }
 
     .contacts__right__side {
         width: 100%;
-        height: 50%;
+        height: auto;
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;

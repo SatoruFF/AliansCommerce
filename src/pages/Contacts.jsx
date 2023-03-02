@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/contacts.scss";
-import { Divider, Typography } from "antd";
+import { Typography } from "antd";
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Text} = Typography;
 
 const Contacts = () => {
   return (
