@@ -13,12 +13,14 @@
 }
 
 .contacts__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
-    @extend %blockBackground
+    @extend %blockBackground;
+    .contacts__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .inf {

@@ -26,58 +26,60 @@ const ItemInfo = () => {
     <div>
       {currentItem !== null ? (
         <div className="work" id="part-1">
-          <div className="item-info__navigation">
-          <Anchor
-            сlassName="item-info__anchor"
-            items={[
-              {
-                key: "part-1",
-                href: "#part-1",
-                title: "Описание",
-              },
-              {
-                key: "part-2",
-                href: "#part-2",
-                title: "Характеристики",
-              },
-              {
-                key: "part-3",
-                href: "#part-3",
-                title: "Смотрите так же",
-              },
-            ]}
-          />
-          </div>
-          <div className="work__wrapper">
-            <div className="work__wrapper__space">
-              <div className="itemInfo__left__side">
-                <div className="itemInfo__left__carousel-space">
-                  <div className="image">
-                    {pic !== null && (
-                      <Carousel>
-                        {pic.map((image) => (
-                          <div>
-                            <img key={Math.random()} src={image.img} alt="" />
-                          </div>
-                        ))}
-                      </Carousel>
-                    )}
+          <div className="item-info__wrapper">
+            <div className="item-info__navigation">
+              <Anchor
+                сlassName="item-info__anchor"
+                items={[
+                  {
+                    key: "part-1",
+                    href: "#part-1",
+                    title: "Описание",
+                  },
+                  {
+                    key: "part-2",
+                    href: "#part-2",
+                    title: "Характеристики",
+                  },
+                  {
+                    key: "part-3",
+                    href: "#part-3",
+                    title: "Смотрите так же",
+                  },
+                ]}
+              />
+            </div>
+            <div className="work__wrapper">
+              <div className="work__wrapper__space content">
+                <div className="itemInfo__left__side">
+                  <div className="itemInfo__left__carousel-space">
+                    <div className="image">
+                      {pic !== null && (
+                        <Carousel>
+                          {pic.map((image) => (
+                            <div key={Math.random()}>
+                              <img src={image.img} alt="" />
+                            </div>
+                          ))}
+                        </Carousel>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div className="itemInfo__right__side">
+                  <div className="item-info-descr__title">
+                    {currentItem.title}
+                  </div>
+                  <div className="item__description">
+                    <p>{currentItem.description}</p>
                   </div>
                 </div>
               </div>
-              <div className="itemInfo__right__side">
-                <div className="item-info-descr__title">
-                  {currentItem.title}
-                </div>
-                <div className="item__description">
-                  <p>{currentItem.description}</p>
-                </div>
-              </div>
             </div>
+            <div className="variants" id="part-2"></div>
+            <div className="other__products" id="part-3"></div>
+            <MyFooter></MyFooter>
           </div>
-          <div className="variants" id="part-2"></div>
-          <div className="other__products" id="part-3"></div>
-          <MyFooter></MyFooter>
         </div>
       ) : (
         <h1>

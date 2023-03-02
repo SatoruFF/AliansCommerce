@@ -22,15 +22,16 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 8px;
+    @extend %blockBackground;
     p {
         line-height: 1.5;
         @extend %titleFont;
     }
     .work__wrapper__space {
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         overflow: hidden;
-        @extend %centerTemplate, %blockBackground;
+        @extend %centerTemplate;
     }
 } 
 

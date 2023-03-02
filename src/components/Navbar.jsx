@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar__wrapper">
-      <div className="navigation">
+      <div className="navigation content">
         <div className="navbar__item navbar__logo">
         <NavLink to={WELCOME__ROUTE}><img src={mainIcon} alt="" /></NavLink>
         </div>

@@ -1,0 +1,6 @@
+@import './tmp.scss';
+
+.content {
+    margin: 0 auto;
+    @extend %contentLimit;
+}

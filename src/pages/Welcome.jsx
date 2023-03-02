@@ -27,7 +27,7 @@ const Welcome = () => {
   return (
     <div className="welcome__wrapper animate__animated animate__fadeInUp">
       <div className="welcome__main">
-        <div className="welcome__main-content">
+        <div className="welcome__main-content content">
           <div className="welcome__main__left-side">
             <p className="welcome__brand__title">Альянс</p>
             <p className="welcome__main__title">
@@ -71,7 +71,7 @@ const Welcome = () => {
       </div>
       <div className="welcome__about">
         <p className="welcome__content__title">О нас</p>
-        <div className="welcome__about__wrapper">
+        <div className="welcome__about__wrapper content">
           <div className="welcome__about__logo">
             <img src={logo} alt="" />
           </div>
@@ -86,7 +86,7 @@ const Welcome = () => {
       <div className="privilege">
         <div className="priv__conteiner">
           <p className="welcome__content__title">Преимущества</p>
-          <div className="priv__wrapper">
+          <div className="priv__wrapper content">
             <div className="priv__item">
               <img src={like} alt="" /> <p className="bold"> Ассортимент </p>
               <br /> <p> Огромный выбор товаров на любой вкус </p>
