@@ -1,21 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 %mainFont {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 
 %titleFont {
     font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', sans-serif;
 }
 
 %titleBackground {
-    background-color: #306cbf;
+    //background-color: #306cbf;
+    background-color: #2f54eb;
 }
 
 %blockBackground {
@@ -41,4 +36,14 @@
 
 %contentLimit {
     max-width: 1400px;
+}
+
+%titleSize {
+    font-size: 23px;
+}
+
+%titleBlock {
+    height: 60px;
+    color: white;
+    @extend %titleFont, %titleBackground, %centerTemplate, %titleSize;
 }

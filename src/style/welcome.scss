@@ -110,10 +110,7 @@
 }
 
 .welcome__content__title {
-    color: white;
-    padding: 25px;
-    font-size: 32px;
-    @extend %centerTemplate, %titleFont, %titleBackground;
+    @extend %titleBlock;
 }
 
 .welcome__about__wrapper {
@@ -188,20 +185,6 @@
 
 .bold {
     font-weight: bold;
-}
-
-
-//products
-.products {
-    height: 70vh;
-}
-
-.products__title {
-    text-align: center;
-    font-size: 31px;
-    padding: 20px;
-    color: white;
-    @extend %titleFont, %titleBackground;
 }
 
 

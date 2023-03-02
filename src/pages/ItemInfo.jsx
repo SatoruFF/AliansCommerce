@@ -55,7 +55,7 @@ const ItemInfo = () => {
                   <div className="itemInfo__left__carousel-space">
                     <div className="image">
                       {pic !== null && (
-                        <Carousel>
+                        <Carousel autoplay={true}>
                           {pic.map((image) => (
                             <div key={Math.random()}>
                               <img src={image.img} alt="" />
@@ -76,7 +76,13 @@ const ItemInfo = () => {
                 </div>
               </div>
             </div>
-            <div className="variants" id="part-2"></div>
+            <div className="variants" id="part-2">
+              <div className="variants-content content">
+                <div className="variants__title">
+                  <p>Характеристики</p>
+                </div>
+              </div>
+            </div>
             <div className="other__products" id="part-3"></div>
             <MyFooter></MyFooter>
           </div>

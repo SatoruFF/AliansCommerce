@@ -13,8 +13,8 @@ import surprise from '../assets/paper/10/1.jpg';
 // other images
 // 1
 import pergament2 from '../assets/paper/1/2.jpg';
-import pergament3 from '../assets/paper/1/2.jpg';
-import pergament4 from '../assets/paper/1/2.jpg';
+import pergament3 from '../assets/paper/1/3.jpg';
+import pergament4 from '../assets/paper/1/4.jpg';
 // 2
 import podPergament2 from '../assets/paper/2/2.jpg';
 //3

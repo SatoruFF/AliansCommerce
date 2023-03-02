@@ -1,34 +1,29 @@
 @import '../utils/tmp.scss';
 
 .main__space__contact {
-    width: 100vw;
-    height: 100vh;
+    @extend %blockBackground;
 }
 
 .contacts__title {
-    font-size: 23px;
-    height: 70px;
-    color: white;
-    @extend %centerTemplate, %titleFont, %titleBackground;
+    @extend %titleBlock
 }
 
 .contacts__wrapper {
-    width: 100vw;
     height: 100vh;
     @extend %blockBackground;
-    .contacts__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .inf {
-    margin-bottom: 30px; //!!!
+    margin-bottom: 30px;
     width: 90%;
     word-wrap: break-word;
     @extend %titleFont;
-    h1, h3, span {
+    h1,
+    h3,
+    span {
         color: white;
     }
 }
@@ -41,71 +36,67 @@
 
 .contacts__right__side {
     width: 50%;
+
     .map__title {
         margin-top: 15px;
         text-align: center;
+
         .map__title__text {
             color: white;
         }
     }
 
     .map {
-        width: 100%;
-        height: 85%;
-        margin: auto;
-        margin-bottom: 15px;
-        @extend %centerTemplate;
-        iframe {
-            border-radius: 15px;
-        }
-    }
-    .map {
         margin-bottom: 20px;
-        margin: auto;
         width: 375px !important;
         height: 500px !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: auto;
+        @extend %centerTemplate;
+
         iframe {
             border-radius: 15px;
             width: 100% !important;
             height: 100% !important;
             @extend %shadowTemplate;
-    }
+        }
     }
 }
 
 @media screen and (max-width: 992px) {
- .contacts__wrapper {
-    flex-direction: column;
-    justify-content: space-around;
-    height: auto;
- }
- .contacts__left__side {
-    width: 100%;
-    height: 50%;
-    padding: 0;
- }
- .contacts__right__side {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
- }
- .map__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 12px;
-    background-color: #1677ff;
-    .map__title__text {
-        margin-top: 10px;
-        color: white;
+    .contacts__wrapper {
+        height: 100vh;
+    }
+
+    .contacts__wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .contacts__left__side {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+    }
+
+    .contacts__right__side {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .map__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 12px;
+        background-color: #2f54eb;
+        .map__title__text {
+            margin-top: 10px;
+            color: white;
+        }
     }
 }
-}
-
-
-

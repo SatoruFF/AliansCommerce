@@ -1,12 +1,7 @@
 @import '../utils/tmp.scss';
 
 .catalog__title {
-    height: 70px;
-    color: white;
-    font-size: 23px;
-    @extend %titleBackground;
-    @extend %centerTemplate;
-    @extend %titleFont;
+    @extend %titleBlock
 }
 
 

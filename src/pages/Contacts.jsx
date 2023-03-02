@@ -8,8 +8,8 @@ const Contacts = () => {
   return (
     <div className="main__space__contact">
       <div className="contacts__title">Заинтересовала наша продукция?</div>
+      <div className="contacts__content content">
       <div className="contacts__wrapper">
-        <div className="contacts__content content">
           <div className="contacts__left__side animate__animated animate__fadeInLeft">
             <div className="inf">
               <Typography>
@@ -51,7 +51,7 @@ const Contacts = () => {
               ></iframe>
             </div>
           </div>
-        </div>
+      </div>
       </div>
     </div>
   );
