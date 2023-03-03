@@ -12,7 +12,7 @@ const Contacts = () => {
       <div className="contacts__wrapper">
           <div className="contacts__left__side animate__animated animate__fadeInLeft">
             <div className="inf">
-              <Typography>
+              {/* <Typography>
                 <Title> Контакты и реквизиты организации ООО "Альянс":</Title>
                 <Title level={3}> ИНН/КПП:</Title>
                 <Text>1657238080/165701001</Text>
@@ -31,7 +31,7 @@ const Contacts = () => {
                 <br />
                 <Title level={3}>Email:</Title>
                 <Text copyable>alyansbum@mail.ru</Text>
-              </Typography>
+              </Typography> */}
             </div>
           </div>
           <div className="contacts__right__side animate__animated animate__fadeInRight">
