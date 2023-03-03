@@ -1,6 +1,11 @@
 @import '../utils/tmp.scss';
 
 
+.work {
+    overflow: hidden;
+    @extend %blockBackground;
+}
+
 // Anchor
 .item-info__navigation {
     position: absolute;
@@ -157,6 +162,9 @@
         margin: auto;
         .item-info-descr__title {
             margin-right: 20px;
+        }
+        .item__description {
+            padding-right: 22px;
         }
     }
     .work__wrapper {
