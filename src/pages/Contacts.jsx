@@ -10,7 +10,7 @@ const Contacts = () => {
       <div className="contacts-title">Заинтересовала наша продукция?</div>
       <div className="contacts-content-limit content">
         <div className="contacts__content-main">
-          <div className="contacts__left-side">
+          <div className="contacts__left-side animate__animated animate__fadeInLeft">
             <Typography>
               <Title> Контакты и реквизиты организации ООО "Альянс":</Title>
               <Title level={3}> ИНН/КПП:</Title>
@@ -32,7 +32,7 @@ const Contacts = () => {
               <Text copyable>alyansbum@mail.ru</Text>
             </Typography>
           </div>
-          <div className="contacts__right-side">
+          <div className="contacts__right-side animate__animated animate__fadeInRightBig">
             <div className="contacts__right-side-title">Мы на картах:</div>
             <div className="contacts__right-side-map">
               <iframe
