@@ -28,7 +28,6 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     justify-content: space-around;
     .welcome__main__title {
         color: white;
@@ -38,7 +37,7 @@
     }
     .welcome__brand__title {
         color: white;
-        font-size: 96px;
+        font-size: 90px;
         @extend %mainFont;
     }
     .welcome__main__sub-title {
@@ -202,48 +201,62 @@
 
 // adaptive
 @media screen and (max-width: 992px) {
-    .welcome__about__wrapper {
-        flex-direction: column;
+    .welcome__main {
         height: auto;
-        .welcome__about__text {
-            width: 90%;
+        .welcome__main-content {
+            flex-direction: column;
+            height: auto;
         }
     }
+
     .welcome__main__left-side {
         width: 100%;
+        margin-left: 15px;
+        margin-top: 15px;
+        .welcome__brand__title {
+            margin-right: 25px;
+        }
+        .welcome__main__title {
+            margin-right: 25px;
+        }
+        .welcome__main__sub-title {
+            margin-right: 25px;
+        }
     }
+
     .welcome__main__right-side {
         margin-top: 20px;
         width: 100%;
     }
-    .welcome__about {
-        height: auto !important;
-    }
 
-    .welcome__main {
-        height: auto;
-    }
     .welcome__anchor {
         margin-top: 15px;
         height: 110px;
     }
 
-    .welcome__main-content {
-        flex-direction: column;
-        height: auto;
+
+    .welcome__about {
+        height: auto !important;
+        .welcome__about__wrapper {
+            flex-direction: column;
+            height: auto;
+            .welcome__about__text {
+                width: 90%;
+            }
+        }
     }
 
     .privilege {
         height: auto;
-    }
-    .priv__wrapper {
-        flex-direction: column;
-    }
-    .priv__item {
-        margin-top: 30px;
-        p {
-            margin-top: 2px;
-            padding: 10px;
+        .priv__wrapper {
+            flex-direction: column;
+            .priv__item {
+                margin-top: 30px;
+                p {
+                    margin-top: 2px;
+                    padding: 10px;
+                }
+            }
         }
     }
 }
