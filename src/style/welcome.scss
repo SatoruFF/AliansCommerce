@@ -31,7 +31,8 @@
     justify-content: space-around;
     .welcome__main__title {
         color: white;
-        font-size: 28px;
+        font-size: 31px;
+        margin-left: 7px;
         line-height: 1.5;
         @extend %mainFont;
     }

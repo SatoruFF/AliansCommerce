@@ -4,6 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import "../style/navbar.scss";
 import { Button } from "antd";
 import mainIcon from '../assets/AllianceIcon.jpg'
+//import logo from "../assets/AllianceMainLogo.jpg";
 
 const Navbar = () => {
 

@@ -28,7 +28,7 @@ const ItemInfo = () => {
         <div className="work" id="part-1">
           <div className="item-info__wrapper">
             <div className="item-info__navigation">
-              <Anchor
+              {/* <Anchor
                 сlassName="item-info__anchor"
                 items={[
                   {
@@ -42,7 +42,7 @@ const ItemInfo = () => {
                     title: "Характеристики",
                   },
                 ]}
-              />
+              /> */}
             </div>
             <div className="work__wrapper">
               <div className="work__wrapper__space content">

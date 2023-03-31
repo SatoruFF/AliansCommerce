@@ -31,7 +31,7 @@ const Footer = () => {
             </Paragraph>
           </Button>
         </div>
-        <div className="footer__item signature">MADE BY RAMILYA</div>
+        <div className="footer__item signature">MADE BY SATORUF</div>
       </div>
     </div>
   );
