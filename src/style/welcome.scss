@@ -1,270 +1,279 @@
-@import '../utils/tmp.scss';
-
+@import "../utils/tmp.scss";
 
 // main
 .welcome__wrapper {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .welcome__main {
-    height: 92vh;
-    //background: url('../assets/mainBackground.jpg') no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
-    @extend %centerTemplate, %blockBackground;
+  height: 92vh;
+  //background: url('../assets/mainBackground.jpg') no-repeat center center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  @extend %centerTemplate, %blockBackground;
 }
 
 .welcome__main-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .welcome__main__left-side {
-    width: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .welcome__main__title {
+    color: white;
+    font-size: 31px;
+    margin-left: 7px;
+    line-height: 1.5;
+    @extend %mainFont;
+  }
+  .welcome__brand__title {
+    color: white;
+    font-size: 90px;
+    @extend %mainFont;
+  }
+  .welcome__main__sub-title {
+    font-size: 18px;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .welcome__main__title {
-        color: white;
-        font-size: 31px;
-        margin-left: 7px;
-        line-height: 1.5;
-        @extend %mainFont;
-    }
-    .welcome__brand__title {
-        color: white;
-        font-size: 90px;
-        @extend %mainFont;
-    }
-    .welcome__main__sub-title {
-        font-size: 18px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        @extend %mainFont;
-    }
+    align-items: center;
+    @extend %mainFont;
+  }
+  .welcome__main__addition {
+    box-sizing: border-box;
+    gap: 10px;
+    width: 90%;
+    @extend %centerTemplate;
+  }
+  .welcome_addition-item {
+    border-radius: 10px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid white;
+    color: #fff;
+    @extend %titleFont;
+  }
 }
 .welcome__main__right-side {
-    width: 40%;
-    height: 100%;
-    @extend %centerTemplate;
-    .welcome__main__carousel-space {
-        width: 70%;
-        height: 70%;
-        border-radius: 10px;
-        @extend %blockBackground;
-        .carousel__item-main {
-            border-radius: 5px;
-            height: 355px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: #060606;
-            font-size: 32px;
-            background-size: cover;
-            @extend %titleFont;
-            @extend %shadowTemplate;
-        }
-        .carousel-item__one {
-            background: url('../assets/paper/1/1.jpg') no-repeat center center;
-        }
-
-        .carousel-item__two {
-            background: url('../assets/paper/2/1.jpg') no-repeat center center;
-            background-size: cover;
-        }
-
-        .carousel-item__three {
-            background: url('../assets/paper/5/1.jpg') no-repeat center center;
-            background-size: cover;
-        }
+  width: 40%;
+  height: 100%;
+  @extend %centerTemplate;
+  .welcome__main__carousel-space {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    @extend %blockBackground;
+    .carousel__item-main {
+      border-radius: 5px;
+      height: 355px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #060606;
+      font-size: 32px;
+      background-size: cover;
+      @extend %titleFont;
+      @extend %shadowTemplate;
     }
+    .carousel-item__one {
+      background: url("../assets/paper/1/1.jpg") no-repeat center center;
+    }
+
+    .carousel-item__two {
+      background: url("../assets/paper/2/1.jpg") no-repeat center center;
+      background-size: cover;
+    }
+
+    .carousel-item__three {
+      background: url("../assets/paper/5/1.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
 }
 
 .welcome__anchor {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .main__arrow {
-    height: 30%;
-    img {
-        height: 100px;
-        width: 100px;
-        animation: arrow 1s infinite linear;
-    }
+  height: 30%;
+  img {
+    height: 100px;
+    width: 100px;
+    animation: arrow 1s infinite linear;
+  }
 }
-
 
 // about
 .welcome__about {
-    height: 80vh; 
-    background-color: white;
+  height: 80vh;
+  background-color: white;
 }
 
 .welcome__content__title {
-    @extend %titleBlock;
+  @extend %titleBlock;
 }
 
 .welcome__about__wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    img {
-        width: 350px;
-        height: 350px;
-    }
-    .welcome__about__logo {
-        width: 50%;
-        @extend %centerTemplate;
-    }
-    .welcome__about__text {
-        word-wrap: break-word;
-        text-align: start;
-        line-height: 2;
-        width: 50%;
-        padding: 30px;
-        font-size: 19px;
-        @extend %centerTemplate;
-        @extend %mainFont;
-    }
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  .welcome__about__logo {
+    width: 50%;
+    @extend %centerTemplate;
+  }
+  .welcome__about__text {
+    word-wrap: break-word;
+    text-align: start;
+    line-height: 2;
+    width: 50%;
+    padding: 30px;
+    font-size: 19px;
+    @extend %centerTemplate;
+    @extend %mainFont;
+  }
 }
-
 
 // pluses
 .privilege {
-    height: 85vh;
-    background-size: cover;
-    @extend %blockBackground;
-    overflow: hidden;
-    @extend %centerTemplate;
+  height: 85vh;
+  background-size: cover;
+  @extend %blockBackground;
+  overflow: hidden;
+  @extend %centerTemplate;
 }
 
 .priv__conteiner {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .priv__wrapper {
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .priv__item {
-    //margin-top: 150px;
-    display: flex;
-    height: auto;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    img {
-        width: 150px;
-        height: 150px;
-    }
-    p {
-        margin-top: 30px;
-        color: white;
-        @extend %mainFont;
-    }
+  //margin-top: 150px;
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  p {
+    margin-top: 30px;
+    color: white;
+    @extend %mainFont;
+  }
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 // animation
 @keyframes arrow {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(25px);
-    }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
 }
-
 
 // adaptive
 @media screen and (max-width: 992px) {
-    .welcome__main {
-        height: auto;
-        .welcome__main-content {
-            flex-direction: column;
-            height: auto;
-        }
+  .welcome__main {
+    height: auto;
+    .welcome__main-content {
+      flex-direction: column;
+      height: auto;
     }
+  }
 
-    .welcome__main__left-side {
-        width: 100%;
-        margin-left: 15px;
-        margin-top: 15px;
-        .welcome__brand__title {
-            margin-right: 30px;
-        }
-        .welcome__main__title {
-            margin-right: 30px;
-        }
-        .welcome__main__sub-title {
-            margin-right: 30px;
-        }
+  .welcome__main__left-side {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+    .welcome__brand__title {
+      margin-right: 30px;
     }
-
-    .welcome__main__right-side {
-        margin-top: 20px;
-        width: 100%;
+    .welcome__main__title {
+      margin-right: 30px;
     }
-
-    .welcome__anchor {
-        margin-top: 15px;
-        height: 110px;
+    .welcome__main__sub-title {
+      margin-right: 30px;
     }
+  }
 
+  .welcome__main__right-side {
+    margin-top: 20px;
+    width: 100%;
+  }
 
-    .welcome__about {
-        height: auto !important;
-        .welcome__about__wrapper {
-            flex-direction: column;
-            height: auto;
-            .welcome__about__text {
-                width: 90%;
-            }
+  .welcome__anchor {
+    margin-top: 15px;
+    height: 110px;
+  }
+
+  .welcome__about {
+    height: auto !important;
+    .welcome__about__wrapper {
+      flex-direction: column;
+      height: auto;
+      .welcome__about__text {
+        width: 90%;
+      }
+    }
+  }
+
+  .privilege {
+    height: auto;
+    .priv__wrapper {
+      flex-direction: column;
+      .priv__item {
+        margin-top: 30px;
+        p {
+          margin-top: 2px;
+          padding: 10px;
         }
+      }
     }
-
-    .privilege {
-        height: auto;
-        .priv__wrapper {
-            flex-direction: column;
-            .priv__item {
-                margin-top: 30px;
-                p {
-                    margin-top: 2px;
-                    padding: 10px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
-    .carousel__item-main {
-        height: 700px;
-    }
-    }
+  .carousel__item-main {
+    height: 700px;
+  }
+}
