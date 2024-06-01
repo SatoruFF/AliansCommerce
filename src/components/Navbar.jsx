@@ -26,7 +26,7 @@ const Navbar = () => {
         <Title
           style={where.pathname == CONTACT__ROUTE ? { display: "none" } : {}}
           className="navbar__item navbar__salesNumber"
-          level={4}
+          level={5}
         >
           +7 917 270-09-99
         </Title>
@@ -35,6 +35,7 @@ const Navbar = () => {
             <Button
               shape="round"
               size="large"
+              className="navbar__button"
               type={where.pathname == WELCOME__ROUTE ? "primary" : "text"}
             >
               Главная
@@ -46,6 +47,7 @@ const Navbar = () => {
             <Button
               shape="round"
               size="large"
+              className="navbar__button"
               type={where.pathname == CATALOG__ROUTE ? "primary" : "text"}
             >
               Каталог
@@ -57,6 +59,7 @@ const Navbar = () => {
             <Button
               shape="round"
               size="large"
+              className="navbar__button"
               type={where.pathname == CONTACT__ROUTE ? "primary" : "text"}
             >
               Контакты

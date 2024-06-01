@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+$titles-background: #C1A785;
+$buttonColor: #C1A785;
+$borderColor: #C1A785;
+$welcomeTextColor: white;
+
 %mainFont {
     font-family: 'Montserrat', sans-serif;
 }
@@ -10,8 +15,8 @@
 }
 
 %titleBackground {
-    //background-color: #306cbf;
-    background-color: #2f54eb;
+    // background-color: #2f54eb; // old variant
+    background-color: $titles-background;
 }
 
 %blockBackground {

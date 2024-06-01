@@ -2,6 +2,8 @@ import React from "react";
 import "../style/contacts.scss";
 import { Typography } from "antd";
 
+import barcode from "../assets/barcode.jpeg";
+
 const { Title, Text } = Typography;
 
 const Contacts = () => {
@@ -33,10 +35,10 @@ const Contacts = () => {
               <Title level={3}>Email:</Title>
               <Text copyable>alyansbum@mail.ru</Text>
               <Title level={3}>Праововая информация:</Title>
-              <Text copyable>
+              <Text>
                 Данный сайт носит исключительно информационный характер и ни при
                 каких условиях не является публичной офертой, определяемой
-                положениями Статьи 437 (2) Гражданского кодекса Российской
+                положениями cтатьи 437 (2) Гражданского кодекса Российской
                 Федерации.
               </Text>
             </Typography>
@@ -50,6 +52,9 @@ const Contacts = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div>
+            <div className="contacts_right-side-barcode">
+              <img className="contacts_barcode" src={barcode} alt="" />
             </div>
           </div>
         </div>

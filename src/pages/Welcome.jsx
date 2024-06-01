@@ -48,16 +48,26 @@ const Welcome = () => {
             <p className="welcome__main__sub-title">
               Заказ и консультации по телефону, так же можете написать нам на
               email:
-              <Button type="primary" style={contactsStyleBtn} ghost>
-                <Paragraph copyable style={contactsStyle}>
-                  8 917 270 09 99
-                </Paragraph>
-              </Button>
-              <Button type="primary" style={contactsStyleBtn} ghost>
-                <Paragraph copyable style={contactsStyle}>
-                  alyansbum@mail.ru
-                </Paragraph>
-              </Button>
+              <div className="welcome__contacts-btns">
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    8 917 270 09 99
+                  </Paragraph>
+                </Button>
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    alyansbum@mail.ru
+                  </Paragraph>
+                </Button>
+              </div>
             </p>
           </div>
           <div className="welcome__main__right-side">

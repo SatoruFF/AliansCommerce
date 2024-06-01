@@ -1,7 +1,9 @@
 import React from "react";
 import "../style/footer.scss";
-import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
+import { PhoneOutlined, MailOutlined, MessageFilled } from "@ant-design/icons";
 import { Button, Typography } from "antd";
+import viber from "../assets/viber-white-icon.webp"
+import telegram from "../assets/telegram-white-icon.webp"
 const { Title, Paragraph, Text } = Typography;
 
 const Footer = () => {
@@ -16,18 +18,34 @@ const Footer = () => {
     <div className="footer__wrapper">
       <div className="footer__items">
         <div className="footer__item">
-          <Button type="primary" style={contactsStyleBtn} ghost>
+          <Button style={contactsStyleBtn} ghost>
             <Paragraph copyable style={contactsStyle}>
-              <PhoneOutlined style={{ color: "white", marginRight: "5px" }} />8
+              <PhoneOutlined style={{ color: "white", marginRight: "5px" }} />+7
               917 270 09 99
             </Paragraph>
           </Button>
         </div>
         <div className="footer__item">
-          <Button type="primary" style={contactsStyleBtn} ghost>
+          <Button style={contactsStyleBtn} ghost>
             <Paragraph copyable style={contactsStyle}>
               <MailOutlined style={{ color: "white", marginRight: "5px" }} />
               alyansbum@mail.ru
+            </Paragraph>
+          </Button>
+        </div>
+        <div className="footer__item">
+          <Button style={contactsStyleBtn} ghost>
+            <Paragraph copyable style={contactsStyle}>
+              <img src={viber} style={{ color: "white", marginRight: "5px", marginTop: "3px" }} className="footer__viber-logo"/> 
+              +7 917 270 09 99
+            </Paragraph>
+          </Button>
+        </div>
+        <div className="footer__item">
+          <Button style={contactsStyleBtn} ghost>
+            <Paragraph copyable style={contactsStyle}>
+            <img src={telegram} style={{ color: "white", marginRight: "5px", marginTop: "3px" }} className="footer__viber-logo"/> 
+              +7 917 270 09 99
             </Paragraph>
           </Button>
         </div>
