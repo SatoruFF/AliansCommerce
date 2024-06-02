@@ -9,7 +9,7 @@
 .welcome__main {
   height: 92vh;
   // background: url('../assets/mainBackground.jpg') no-repeat center center;
-  background: url('../assets/forestBlur.png') no-repeat center center;
+  background: url('../assets/forestBlur.jpg') no-repeat center center;
   // filter: blur(5px);
   background-size: cover;
   flex-direction: column;
@@ -119,7 +119,7 @@
     }
 
     .carousel-item__three {
-      background: url("../assets/paper/5/1.jpg") no-repeat center center;
+      background: url("../assets/paper/5/ecoline1.jpeg") no-repeat center center;
       background-size: cover;
     }
   }
