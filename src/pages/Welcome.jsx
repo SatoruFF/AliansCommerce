@@ -72,7 +72,7 @@ const Welcome = () => {
           </div>
           <div className="welcome__main__right-side">
             <div className="welcome__main__carousel-space">
-              <Carousel autoplay>
+              <Carousel autoplay className="welcome-carousel">
                 <div>
                   <h3 className="carousel__item-main carousel-item__one">
                     Пергамент

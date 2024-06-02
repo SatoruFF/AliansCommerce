@@ -87,10 +87,14 @@
   height: 100%;
   @extend %centerTemplate;
   .welcome__main__carousel-space {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 50%;
     border-radius: 10px;
     @extend %blockBackground;
+    .welcome-carousel {
+      width: 100%;
+      height: 100%;
+    }
     .carousel__item-main {
       border-radius: 5px;
       height: 355px;
