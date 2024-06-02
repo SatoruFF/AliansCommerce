@@ -37,6 +37,7 @@ const Navbar = () => {
               size="large"
               className="navbar__button"
               type={where.pathname == WELCOME__ROUTE ? "primary" : "text"}
+              ghost
             >
               Главная
             </Button>
@@ -49,6 +50,7 @@ const Navbar = () => {
               size="large"
               className="navbar__button"
               type={where.pathname == CATALOG__ROUTE ? "primary" : "text"}
+              ghost
             >
               Каталог
             </Button>
@@ -61,6 +63,7 @@ const Navbar = () => {
               size="large"
               className="navbar__button"
               type={where.pathname == CONTACT__ROUTE ? "primary" : "text"}
+              ghost
             >
               Контакты
             </Button>

@@ -3,11 +3,7 @@ import pergament from "../assets/paper/1/1.jpg";
 import podPergament from "../assets/paper/2/1.jpg";
 import paperHot from "../assets/paper/3/1.jpg";
 import paperWrapper from "../assets/paper/4/1.jpg";
-import ekolin from "../assets/paper/5/1.jpg";
-import folga from "../assets/paper/6/1.jpg";
-import stretch from "../assets/paper/7/1.jpg";
 import bopp from "../assets/paper/8/1.jpg";
-import cup from "../assets/paper/9/1.jpg";
 import surprise from "../assets/paper/10/1.jpg";
 
 // other images
@@ -25,31 +21,55 @@ import paperWrapper3 from "../assets/paper/4/3.jpg";
 import paperWrapper4 from "../assets/paper/4/4.jpg";
 import paperWrapper5 from "../assets/paper/4/5.jpg";
 // 5
-import ekolin2 from "../assets/paper/5/2.jpg";
-import ekolin3 from "../assets/paper/5/3.jpg";
-import ekolin4 from "../assets/paper/5/4.jpg";
+import ekolin1 from "../assets/paper/5/ecoline1.jpeg";
+import ekolin2 from "../assets/paper/5/ecoline2.jpeg";
+import ekolin3 from "../assets/paper/5/ecoline3.jpeg";
+import ekolin4 from "../assets/paper/5/ecoline4.jpeg";
+import ekolin5 from "../assets/paper/5/ecoline5.jpeg";
 // 6
-import folga2 from "../assets/paper/6/2.jpg";
+import folga1 from "../assets/paper/6/folga1.jpeg";
+import folga2 from "../assets/paper/6/folga2.jpeg";
+import folga3 from "../assets/paper/6/folga3.jpeg";
+import folga4 from "../assets/paper/6/folga4.jpeg";
+import folga5 from "../assets/paper/6/folga5.jpeg";
 // 7
-// import stretch2 from '../assets/paper/7/2.jpg';
+import stretch1 from "../assets/paper/7/stretch1.jpeg";
+import stretch2 from "../assets/paper/7/stretch2.jpeg";
+import stretch3 from "../assets/paper/7/stretch3.jpeg";
+import stretch4 from "../assets/paper/7/stretch4.jpeg";
+import stretch5 from "../assets/paper/7/stretch5.jpeg";
 // 8
 //import bopp2 from '../assets/paper/8/2.jpg';
 // 9
-// import cup from '../assets/paper/9/1.jpg';
+import cup1 from '../assets/paper/9/cup1.jpeg';
+import cup2 from '../assets/paper/9/cup2.jpeg';
+import cup3 from '../assets/paper/9/cup3.jpeg';
 // 10
 import surprise2 from "../assets/paper/10/2.jpg";
 import surprise3 from "../assets/paper/10/3.jpg";
 import surprise4 from "../assets/paper/10/4.jpg";
 // 11
-import platinka from "../assets/paper/11/platinka.jpeg";
+import platinka1 from "../assets/paper/11/platin1.jpeg";
+import platinka2 from "../assets/paper/11/platin2.jpeg";
+import platinka3 from "../assets/paper/11/platin3.jpeg";
 // 12
-import paperPacs from "../assets/paper/12/paperPacs.jpeg";
+import paket1 from "../assets/paper/12/paket1.jpeg";
+import paket2 from "../assets/paper/12/paket2.jpeg";
+import paket3 from "../assets/paper/12/paket3.jpeg";
 // 13
-import doiPack from "../assets/paper/13/doiPack.jpeg";
+import doiPack1 from "../assets/paper/13/doi1.jpeg";
+import doiPack2 from "../assets/paper/13/doi2.jpeg";
+import doiPack3 from "../assets/paper/13/doi3.jpeg";
 // 14
-import gofroCorob from "../assets/paper/14/gofroCorob.webp";
+import korob1 from "../assets/paper/14/korob1.jpg";
+import korob2 from "../assets/paper/14/korob2.jpg";
+import korob3 from "../assets/paper/14/korob3.jpg";
 // 15
-import podlojki from "../assets/paper/15/podlojki.webp";
+import podloj1 from "../assets/paper/15/podloj1.jpg";
+import podloj2 from "../assets/paper/15/podloj2.jpg";
+import podloj3 from "../assets/paper/15/podloj3.jpg";
+import podloj4 from "../assets/paper/15/podloj4.jpg";
+import podloj5 from "../assets/paper/15/podloj5.jpg";
 
 export const papers = [
   {
@@ -195,7 +215,7 @@ export const papers = [
     title: "Эколин, умная бумага, линкавер, пленка минеральная",
     images: [
       {
-        img: ekolin,
+        img: ekolin1,
       },
       {
         img: ekolin2,
@@ -205,6 +225,9 @@ export const papers = [
       },
       {
         img: ekolin4,
+      },
+      {
+        img: ekolin5,
       },
     ],
     description: `Эколин называют умной бумагой, так как она объединяет в себе свойства бумаги и полимерной пленки. Помимо высокой жиро - и влагостойкости имеет высокие барьерные свойства по отношению к УФ свету, кислороду, водяному пару. Эколин является современной альтернативой пергаменту и кашированной фольге. Идеально подходит для упаковки: сливочного масла ,маргаринов, спредов, мороженого, творожных изделий, дрожжей, цветов, сыра и фастфуда.`,
@@ -230,10 +253,19 @@ export const papers = [
     title: "Кашированная фольга",
     images: [
       {
-        img: folga,
+        img: folga1,
       },
       {
         img: folga2,
+      },
+      {
+        img: folga3,
+      },
+      {
+        img: folga4,
+      },
+      {
+        img: folga5,
       },
     ],
     description: `Это  материал, скомбинированный из фольги, полиэтилена и бумаги. Достоинства кашированной фольги заключается в том, что материал обладает высокой защитой от проникновения различных запахов и жидкостей, что не допускает окисления продукта. В основном используется для упаковки масла, маргарина, мороженного, творожных изделий, мясного фарша.`,
@@ -247,7 +279,19 @@ export const papers = [
     title: "Стретч пленка",
     images: [
       {
-        img: stretch,
+        img: stretch2,
+      },
+      {
+        img: stretch1,
+      },
+      {
+        img: stretch3,
+      },
+      {
+        img: stretch4,
+      },
+      {
+        img: stretch5,
       },
     ],
     description: `Растягивающаяся пленка, имеющая разную плотность и прочность. Материалы с наименьшей плотностью 15 – 20 микрон выбирают для запаковки продуктов, толщиной 17 – 23 микрон применяются для упаковывания тяжеловесных товаров (паллетов, коробок). `,
@@ -273,7 +317,13 @@ export const papers = [
     title: "Стаканы",
     images: [
       {
-        img: cup,
+        img: cup1,
+      },
+      {
+        img: cup2,
+      },
+      {
+        img: cup3,
       },
     ],
     description: `Cтаканы без печати и с нанесением печати, под любой дизайн. Полипропиленовые стаканчики представлены широкой линейкой объемами от 100 мл до 500 мл и диаметром от 75 мл до 95 мл 
@@ -314,7 +364,13 @@ export const papers = [
     title: "Платинка",
     images: [
       {
-        img: platinka,
+        img: platinka1,
+      },
+      {
+        img: platinka2,
+      },
+      {
+        img: platinka3,
       },
     ],
     description: `Платинка (крышка для запаивания стаканов) – это премиальное решение упаковки, подходит практически для любых продуктов: молочной продукции, йогуртов, сметаны, джемов, соусов, десертов, сухих супов, кофейных капсул, каш быстрого приготовления, плавленных сыров и детского питания.
@@ -326,7 +382,13 @@ export const papers = [
     title: "Пакеты",
     images: [
       {
-        img: paperPacs,
+        img: paket1,
+      },
+      {
+        img: paket2,
+      },
+      {
+        img: paket3,
       },
     ],
     description: `Виды пакетов: бумажные пакеты с ручками, пакеты из бумаги для сетей быстрого питания с печатью, ламинированные бумажные пакеты «с окном», 
@@ -337,7 +399,13 @@ export const papers = [
     title: "Дой паки",
     images: [
       {
-        img: doiPack,
+        img: doiPack1,
+      },
+      {
+        img: doiPack2,
+      },
+      {
+        img: doiPack3,
       },
     ],
     description: `Дой паки – многослойные пакеты, металлизированные пакеты с  замком-zip lock и без замка, трехшовные пакеты без печати и с печатью под запайку.`,
@@ -347,7 +415,13 @@ export const papers = [
     title: "Гофрокороба",
     images: [
       {
-        img: gofroCorob,
+        img: korob1,
+      },
+      {
+        img: korob2,
+      },
+      {
+        img: korob3,
       },
     ],
     description: `Гофрокороба – предлагаем широкий ассортимент гофроупаковки из двух-, трех-слойного гофрокартона (Т22,Т23) любой сложности и размеров.`,
@@ -357,7 +431,19 @@ export const papers = [
     title: "Подложки",
     images: [
       {
-        img: podlojki,
+        img: podloj1,
+      },
+      {
+        img: podloj2,
+      },
+      {
+        img: podloj3,
+      },
+      {
+        img: podloj4,
+      },
+      {
+        img: podloj5,
       },
     ],
     description: `Подложки круглые для выпечки и подложки под торты «ромашка» - изготовлены из подпергамента П52, пергамента (А64гр), силиконизированного пергамента.  
