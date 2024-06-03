@@ -41,9 +41,9 @@ import stretch5 from "../assets/paper/7/stretch5.jpeg";
 // 8
 //import bopp2 from '../assets/paper/8/2.jpg';
 // 9
-import cup1 from '../assets/paper/9/cup1.jpeg';
-import cup2 from '../assets/paper/9/cup2.jpeg';
-import cup3 from '../assets/paper/9/cup3.jpeg';
+import cup1 from "../assets/paper/9/cup1.jpeg";
+import cup2 from "../assets/paper/9/cup2.jpeg";
+import cup3 from "../assets/paper/9/cup3.jpeg";
 // 10
 import surprise2 from "../assets/paper/10/2.jpg";
 import surprise3 from "../assets/paper/10/3.jpg";
@@ -253,10 +253,10 @@ export const papers = [
     title: "Кашированная фольга",
     images: [
       {
-        img: folga1,
+        img: folga2,
       },
       {
-        img: folga2,
+        img: folga1,
       },
       {
         img: folga3,

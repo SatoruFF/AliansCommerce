@@ -37,7 +37,7 @@ const Footer = () => {
           <Button style={contactsStyleBtn} ghost>
             <Paragraph copyable style={contactsStyle}>
               <img src={viber} style={{ color: "white", marginRight: "5px", marginTop: "3px" }} className="footer__viber-logo"/> 
-              +7 917 270 09 99
+              +7 980 915 80 49
             </Paragraph>
           </Button>
         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
           <Button style={contactsStyleBtn} ghost>
             <Paragraph copyable style={contactsStyle}>
             <img src={telegram} style={{ color: "white", marginRight: "5px", marginTop: "3px" }} className="footer__viber-logo"/> 
-              +7 917 270 09 99
+              +7 980 915 72 36
             </Paragraph>
           </Button>
         </div>

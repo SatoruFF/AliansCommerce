@@ -53,9 +53,6 @@ const Contacts = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="contacts_right-side-barcode">
-              <img className="contacts_barcode" src={barcode} alt="" />
-            </div>
           </div>
         </div>
       </div>

@@ -23,13 +23,6 @@ const Navbar = () => {
             <img src={mainIcon} alt="" />
           </NavLink>
         </div>
-        <Title
-          style={where.pathname == CONTACT__ROUTE ? { display: "none" } : {}}
-          className="navbar__item navbar__salesNumber"
-          level={5}
-        >
-          +7 917 270-09-99
-        </Title>
         <div className="navbar__item">
           <NavLink to={WELCOME__ROUTE}>
             <Button
@@ -68,6 +61,13 @@ const Navbar = () => {
               Контакты
             </Button>
           </NavLink>
+        </div>
+        <div
+          style={where.pathname == CONTACT__ROUTE ? { display: "none" } : {}}
+          className="navbar__item navbar__salesNumber"
+        >
+          <div>+7 917 270-09-99</div>
+          <div>alyansbum@mail.ru</div>
         </div>
       </div>
     </div>

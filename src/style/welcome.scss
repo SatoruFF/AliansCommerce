@@ -63,6 +63,7 @@
     box-sizing: border-box;
     gap: 10px;
     width: 100%;
+    overflow-y: scroll;
     @extend %centerTemplate;
     .welcome_addition-item {
       height: 70px;
@@ -74,7 +75,7 @@
       padding: 8px;
       border: 1px solid white;
       color: $welcomeTextColor;
-      background-color: black;
+      background-color: #434343;
       @extend %titleFont, %centerTemplate;
     }
   }
@@ -85,7 +86,12 @@
 .welcome__main__right-side {
   width: 30%;
   height: 100%;
-  @extend %centerTemplate;
+  @extend %centerTemplate, %titleFont;
+  flex-direction: column;
+  gap: 20px;
+  .welcome__carousel-address {
+    color: white;
+  }
   .welcome__main__carousel-space {
     width: 80%;
     height: 50%;

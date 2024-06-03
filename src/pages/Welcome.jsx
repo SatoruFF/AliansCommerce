@@ -18,6 +18,7 @@ const Welcome = () => {
     color: "white",
   };
   const contactsStyleBtn = {
+    backgroundColor: "#434343",
     marginTop: "25px",
     width: "auto",
   };
@@ -30,6 +31,30 @@ const Welcome = () => {
             <p className="welcome__brand__title">Альянс</p>
             <p className="welcome__main__title">
               Упаковка или как она должна работать.
+            </p>
+            <p className="welcome__main__sub-title">
+              Заказ и консультации по телефону, так же можете написать нам на
+              email:
+              <div className="welcome__contacts-btns">
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    +7 917 270 09 99
+                  </Paragraph>
+                </Button>
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    alyansbum@mail.ru
+                  </Paragraph>
+                </Button>
+              </div>
             </p>
             <div className="welcome__main__addition">
               <div className="welcome_addition-item">
@@ -45,32 +70,9 @@ const Welcome = () => {
                 Профессиональная помощь в подборе товара.
               </div>
             </div>
-            <p className="welcome__main__sub-title">
-              Заказ и консультации по телефону, так же можете написать нам на
-              email:
-              <div className="welcome__contacts-btns">
-                <Button style={contactsStyleBtn} ghost>
-                  <Paragraph
-                    copyable
-                    style={contactsStyle}
-                    className="welcome_link-item"
-                  >
-                    8 917 270 09 99
-                  </Paragraph>
-                </Button>
-                <Button style={contactsStyleBtn} ghost>
-                  <Paragraph
-                    copyable
-                    style={contactsStyle}
-                    className="welcome_link-item"
-                  >
-                    alyansbum@mail.ru
-                  </Paragraph>
-                </Button>
-              </div>
-            </p>
           </div>
           <div className="welcome__main__right-side">
+            <div className="welcome__carousel-address"></div>
             <div className="welcome__main__carousel-space">
               <Carousel autoplay className="welcome-carousel">
                 <div>
@@ -112,13 +114,13 @@ const Welcome = () => {
             <img src={logo} alt="" />
           </div>
           <div className="welcome__about__text">
-            Альянс - это более 100 видов упаковок! С 2017 года наша компания
+            Альянс - это более 100 видов упаковок! <br/> С 2017 года наша компания
             поставляет упаковочную продукцию, удовлетворяющую самым высоким
             экологичным и национальным стандартам качества, постоянно расширяя
-            ассортимент предлагаемой продукции. Стабильность и надежность работы
+            ассортимент предлагаемой продукции. <br/> Стабильность и надежность работы
             компании подтверждают дружеские и доверительные отношения наших
             клиентов-партнеров среди них, крупные сети, предприятия малого и
-            среднего бизнеса, которым необходим комплексный подход. Выбор нашей
+            среднего бизнеса, которым необходим комплексный подход. <br/> Выбор нашей
             упаковки - это Ваша прибыль и успех!
           </div>
         </div>
