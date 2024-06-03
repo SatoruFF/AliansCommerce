@@ -34,7 +34,7 @@ const Contacts = () => {
               <br />
               <Title level={3}>Email:</Title>
               <Text copyable>alyansbum@mail.ru</Text>
-              <Title level={3}>Праововая информация:</Title>
+              <Title level={3}>Правовая информация:</Title>
               <Text>
                 Данный сайт носит исключительно информационный характер и ни при
                 каких условиях не является публичной офертой, определяемой

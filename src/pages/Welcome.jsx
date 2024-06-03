@@ -18,7 +18,7 @@ const Welcome = () => {
     color: "white",
   };
   const contactsStyleBtn = {
-    backgroundColor: "#434343",
+    backgroundColor: "#262626",
     marginTop: "25px",
     width: "auto",
   };
