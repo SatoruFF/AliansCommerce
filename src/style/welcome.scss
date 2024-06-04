@@ -8,7 +8,7 @@
 
 .welcome__main {
   height: 92vh;
-  background: url('../assets/forestBlur.jpg') no-repeat center center;
+  background: url("../assets/forestBlur.jpg") no-repeat center center;
   background-size: cover;
   flex-direction: column;
   justify-content: space-around;
@@ -123,6 +123,34 @@
 
     .carousel-item__three {
       background: url("../assets/paper/5/ecoline1.jpeg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__four {
+      background: url("../assets/paper/4/1.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__five {
+      background: url("../assets/paper/6/folga1.jpeg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__six {
+      background: url("../assets/paper/7/stretch1.jpeg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__seven {
+      background: url("../assets/paper/8/1.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__eight {
+      background: url("../assets/paper/9/cup1.jpeg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__nine {
+      background: url("../assets/paper/13/doi1.jpeg") no-repeat center center;
+      background-size: cover;
+    }
+    .carousel-item__ten {
+      background: url("../assets/paper/15/podloj1.jpg") no-repeat center center;
       background-size: cover;
     }
   }

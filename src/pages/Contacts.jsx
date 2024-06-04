@@ -44,7 +44,7 @@ const Contacts = () => {
             </Typography>
           </div>
           <div className="contacts__right-side animate__animated animate__fadeInRightBig">
-            <div className="contacts__right-side-title">Мы на картах:</div>
+            <div className="contacts__right-side-title">Схема проезда на склад:</div>
             <div className="contacts__right-side-map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442.5301402223004!2d49.09850159043475!3d55.73464692784092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eac0cd92ad6e5%3A0x30e9b350c8c6b234!2z0JzQsNCz0LjRgdGC0YDQsNC70YzQvdCw0Y8g0YPQuy4sIDc3LCDQmtCw0LfQsNC90YwsINCg0LXRgdC_LiDQotCw0YLQsNGA0YHRgtCw0L0sIDQyMDEwMA!5e0!3m2!1sru!2sru!4v1677595972311!5m2!1sru!2sru"
