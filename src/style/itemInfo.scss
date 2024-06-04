@@ -1,195 +1,196 @@
-@import '../utils/tmp.scss';
-
+@import "../utils/tmp.scss";
 
 .work {
-    overflow: hidden;
-    @extend %blockBackground;
+  overflow: hidden;
+  @extend %blockBackground;
 }
 
 // Anchor
 .item-info__navigation {
-    position: absolute;
-    z-index: 10;
-    top: 80px;
-    a {
-        border: 1px solid #1677ff;
-        padding: 5px;
-        font-size: 12px;
-        text-align: start;
-        color: white !important;
-        @extend %mainFont;
-    }
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  a {
+    border: 1px solid #1677ff;
+    padding: 5px;
+    font-size: 12px;
+    text-align: start;
+    color: white !important;
+    @extend %mainFont;
+  }
 }
-
 
 // First slide
 .work__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 8px;
-    @extend %blockBackground;
-    p {
-        line-height: 1.5;
-        @extend %titleFont;
-    }
-    .work__wrapper__space {
-        height: 90vh;
-        width: 100%;
-        overflow: hidden;
-        @extend %centerTemplate;
-    }
-} 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 8px;
+  @extend %blockBackground;
+  p {
+    line-height: 1.5;
+    @extend %titleFont;
+  }
+  .work__wrapper__space {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    @extend %centerTemplate;
+  }
+}
 
 .itemInfo__left__side {
-    height: 80%;
-    width: 50%;
-    @extend %centerTemplate;
-    //carousel
-    .image {
-        width: 500px;
-        height: 500px;
-    }
-    .itemInfo__left__carousel-space {
-        border-radius: 10px;
-        width: 80%;
-        height: 80%;
-        overflow: hidden;
-        @extend %centerTemplate;
-    }
-    .item-info__carousel {
+  height: 80%;
+  width: 50%;
+  @extend %centerTemplate;
+  //carousel
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    .ant-carousel {
+      height: 100%;
+      width: 100%;
+      img {
         width: 100%;
-        height: 100%;
-    }
-    img {
-        border-radius: 10px;
-        width: 500px;
         height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
     }
+  }
+  .itemInfo__left__carousel-space {
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+    @extend %centerTemplate;
+  }
+  .item-info__carousel {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .itemInfo__right__side {
-    position: relative;
-    @extend %centerTemplate;
-    align-items: flex-start;
+  position: relative;
+  @extend %centerTemplate;
+  align-items: flex-start;
+  text-align: start;
+  flex-direction: column;
+  width: 55%;
+  height: 80%;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  .item-info-descr__title {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    @extend %titleFont;
+  }
+  .item-info-descr__title:hover {
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+    cursor: default;
+  }
+  .item__description {
+    color: white;
+    border-radius: 15px;
+    height: auto;
+    margin-top: 50px;
+    padding: 10px;
+    word-wrap: break-word;
+    font-size: 18px;
+    @extend %centerTemplate, %mainFont;
     text-align: start;
-    flex-direction: column;
-    width: 55%;
-    height: 80%;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    .item-info-descr__title {
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        color: white;
-        font-size: 25px;
-        @extend %titleFont;
-    }
-    .item-info-descr__title:hover {
-        transform: scale(1.02);
-        transition-duration: 0.3s;
-        cursor: default;
-    }
-    .item__description {
-        color: white;
-        border-radius: 15px;
-        height: auto;
-        margin-top: 50px;
-        padding: 10px;
-        word-wrap: break-word;
-        font-size: 18px;
-        @extend %centerTemplate, %mainFont;
-        text-align: start;
-    }
+  }
 }
-
 
 // Second slide
 .variants {
-    overflow: hidden;
-    height: auto;
-    background-color: #262626;
-    .variants-content {
-        height: 100%;
+  overflow: hidden;
+  height: auto;
+  background-color: #262626;
+  .variants-content {
+    height: 100%;
+  }
+  .variants__title {
+    @extend %titleBlock;
+  }
+  .variants-text__space {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+    @extend %centerTemplate;
+    .variants-text {
+      padding: 10px;
+      width: 80%;
+      height: 80%;
+      border: 1px solid white;
+      border-radius: 10px;
     }
-    .variants__title {
-        @extend %titleBlock;
+    .variats-text__p {
+      color: white;
+      text-align: start;
+      line-height: 2;
+      @extend %mainFont;
     }
-    .variants-text__space {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        height: 100%;
-        width: 100%;
-        @extend %centerTemplate;
-        .variants-text {
-            padding: 10px;
-            width: 80%;
-            height: 80%;
-            border: 1px solid white;
-            border-radius: 10px;
-        }
-        .variats-text__p {
-            color: white;
-            text-align: start;
-            line-height: 2;
-            @extend %mainFont;
-        }
-    }
+  }
 }
-
 
 // Third side
 .other__products {
-    height: 100vh;
-    background-color: teal;
+  height: 100vh;
+  background-color: teal;
 }
-
 
 //adaptive
 @media screen and (max-width: 992px) {
-    .item-info__navigation {
-        display: none;
+  .item-info__navigation {
+    display: none;
+  }
+  .itemInfo__left__side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .itemInfo__right__side {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin: auto;
+    .item-info-descr__title {
+      margin-right: 20px;
     }
-    .itemInfo__left__side {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 30px 0;
+    .item__description {
+      padding-right: 22px;
     }
-    .itemInfo__right__side {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin: auto;
-        .item-info-descr__title {
-            margin-right: 20px;
-        }
-        .item__description {
-            padding-right: 22px;
-        }
+  }
+  .work__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    .work__wrapper__space {
+      flex-direction: column;
+      height: auto;
     }
-    .work__wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        .work__wrapper__space {
-            flex-direction: column;
-            height: auto;
-        }
-    }
-    .itemInfo__title__navigation {
-        flex-direction: column;
-    }
-    .itemInfo__title__space {
-        height: auto;
-        justify-content: flex-end;
-    }
+  }
+  .itemInfo__title__navigation {
+    flex-direction: column;
+  }
+  .itemInfo__title__space {
+    height: auto;
+    justify-content: flex-end;
+  }
 }

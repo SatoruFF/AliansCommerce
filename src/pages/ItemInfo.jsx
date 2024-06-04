@@ -52,9 +52,9 @@ const ItemInfo = () => {
                       {pic !== null && (
                         <Carousel autoplay={true} className="item-info__carousel">
                           {pic.map((image) => (
-                            <div key={Math.random()}>
+                            <React.Fragment key={Math.random()}>
                               <img src={image.img} alt="" />
-                            </div>
+                            </React.Fragment>
                           ))}
                         </Carousel>
                       )}
