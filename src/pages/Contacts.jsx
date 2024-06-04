@@ -15,7 +15,7 @@ const Contacts = () => {
       <div className="contacts-content-limit content">
         <div className="contacts__content-main">
           <div className="contacts__left-side animate__animated animate__fadeInLeft">
-            <Typography>
+            <Typography style={{ marginBottom: '10px' }}>
               <Title> Контакты и реквизиты организации ООО "Альянс":</Title>
               <Title level={3}> ИНН/КПП:</Title>
               <Text>1657238080/165701001</Text>

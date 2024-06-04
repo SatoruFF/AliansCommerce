@@ -14,6 +14,11 @@
     flex-direction: row;
     justify-content: space-between;
     .contacts__left-side {
+      .ant-typography {
+        margin-top: 0.4em;
+      }
+      box-sizing: border-box;
+      margin-left: 10px;
       padding: 5px;
       text-align: start;
       p,
@@ -64,6 +69,9 @@
 @media screen and (max-width: 992px) {
   .contacts__content-main {
     flex-direction: column !important;
+    .contacts__left-side {
+      margin-left: 5px;
+    }
     .contacts__right-side {
       display: flex;
       flex-direction: column;
