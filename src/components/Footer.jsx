@@ -49,6 +49,13 @@ const Footer = () => {
             </Paragraph>
           </Button>
         </div>
+        <div className="footer__item">
+          <Button style={contactsStyleBtn} ghost>
+            <Paragraph style={contactsStyle}>
+                Все права защищены.
+            </Paragraph>
+          </Button>
+        </div>
         <div className="footer__item signature">MADE BY SATORUF</div>
       </div>
     </div>

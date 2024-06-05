@@ -34,13 +34,6 @@ const Contacts = () => {
               <br />
               <Title level={3}>Email:</Title>
               <Text copyable>alyansbum@mail.ru</Text>
-              <Title level={3}>Правовая информация:</Title>
-              <Text>
-                Данный сайт носит исключительно информационный характер и ни при
-                каких условиях не является публичной офертой, определяемой
-                положениями cтатьи 437 (2) Гражданского кодекса Российской
-                Федерации.
-              </Text>
             </Typography>
           </div>
           <div className="contacts__right-side animate__animated animate__fadeInRightBig">

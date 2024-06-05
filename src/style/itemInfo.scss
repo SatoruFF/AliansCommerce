@@ -102,9 +102,12 @@
     margin-top: 50px;
     padding: 10px;
     word-wrap: break-word;
-    font-size: 18px;
+    font-size: 16px;
     @extend %centerTemplate, %mainFont;
     text-align: start;
+    text-align: justify; /* Выровнять текст по ширине */
+    word-spacing: 2px; /* Интервал между словами */
+    letter-spacing: 1px; /* Интервал между буквами */
   }
 }
 

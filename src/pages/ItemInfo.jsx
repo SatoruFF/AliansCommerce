@@ -50,7 +50,7 @@ const ItemInfo = () => {
                   <div className="itemInfo__left__carousel-space">
                     <div className="image">
                       {pic !== null && (
-                        <Carousel autoplay={true} className="item-info__carousel">
+                        <Carousel autoplay={false} className="item-info__carousel">
                           {pic.map((image) => (
                             <React.Fragment key={Math.random()}>
                               <img src={image.img} alt="" />
