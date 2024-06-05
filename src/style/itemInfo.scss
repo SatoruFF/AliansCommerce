@@ -139,6 +139,9 @@
       color: white;
       text-align: start;
       line-height: 2;
+      text-align: justify; /* Выровнять текст по ширине */
+      word-spacing: 2px; /* Интервал между словами */
+      letter-spacing: 1px; /* Интервал между буквами */
       @extend %mainFont;
     }
   }
