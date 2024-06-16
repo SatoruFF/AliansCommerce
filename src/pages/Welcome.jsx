@@ -11,9 +11,13 @@ import health from "../assets/health.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button, Carousel, Typography } from "antd";
 import MyFooter from "../components/Footer.jsx";
+import { useNavigate } from "react-router-dom";
+import { CATALOG__ROUTE } from "../utils/consts.js";
 const { Title, Paragraph, Text } = Typography;
 
 const Welcome = () => {
+  const navigate = useNavigate();
+
   const contactsStyle = {
     color: "white",
   };
@@ -23,6 +27,7 @@ const Welcome = () => {
     width: "auto",
   };
 
+  // TODO: убрать хардкод)
   return (
     <div className="welcome__wrapper animate__animated animate__fadeInUp">
       <div className="welcome__main">
@@ -56,24 +61,13 @@ const Welcome = () => {
                 </Button>
               </div>
             </p>
-            <div className="welcome__main__addition">
-              <div className="welcome_addition-item">
-                Доставка в кратчайшие сроки во все города РФ и СНГ.
-              </div>
-              <div className="welcome_addition-item">
-                Гибкое ценообразование и доступные цены.
-              </div>
-              <div className="welcome_addition-item">
-                Гарантия и сертифицированная продукция.
-              </div>
-              <div className="welcome_addition-item">
-                Профессиональная помощь в подборе товара.
-              </div>
-            </div>
           </div>
           <div className="welcome__main__right-side">
             <div className="welcome__carousel-address"></div>
-            <div className="welcome__main__carousel-space">
+            <div
+              className="welcome__main__carousel-space"
+              onClick={() => navigate(CATALOG__ROUTE)}
+            >
               <Carousel autoplay className="welcome-carousel">
                 <div>
                   <h3 className="carousel__item-main carousel-item__one">
@@ -161,8 +155,22 @@ const Welcome = () => {
         </div>
       </div>
       <div className="privilege">
-        <div className="priv__conteiner">
+        <div className="priv__container">
           <p className="welcome__content__title">Преимущества</p>
+          <div className="welcome__main__addition">
+            <div className="welcome_addition-item">
+              Доставка в кратчайшие сроки во все города РФ и СНГ.
+            </div>
+            <div className="welcome_addition-item">
+              Гибкое ценообразование и доступные цены.
+            </div>
+            <div className="welcome_addition-item">
+              Гарантия и сертифицированная продукция.
+            </div>
+            <div className="welcome_addition-item">
+              Профессиональная помощь в подборе товара.
+            </div>
+          </div>
           <div className="priv__wrapper content">
             <div className="priv__item">
               <img src={like} alt="" /> <p className="bold"> Ассортимент </p>

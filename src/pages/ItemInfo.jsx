@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "../style/itemInfo.scss";
 import { papers } from "../model/papers.js";
 import MyFooter from "../components/Footer.jsx";
 import { Carousel, Typography } from "antd";
 import { Anchor } from "antd";
 const { Title, Paragraph, Text } = Typography;
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "../style/itemInfo.scss";
 
 const ItemInfo = () => {
   const [currentItem, setCurrentItem] = useState(null);
@@ -50,10 +51,17 @@ const ItemInfo = () => {
                   <div className="itemInfo__left__carousel-space">
                     <div className="image">
                       {pic !== null && (
-                        <Carousel autoplay={false} className="item-info__carousel">
+                        <Carousel
+                          autoplay={false}
+                          className="item-info__carousel"
+                        >
                           {pic.map((image) => (
                             <React.Fragment key={Math.random()}>
-                              <img src={image.img} alt="" />
+                              <LazyLoadImage
+                                className="carousel-image"
+                                src={image.img}
+                                alt=""
+                              />
                             </React.Fragment>
                           ))}
                         </Carousel>
