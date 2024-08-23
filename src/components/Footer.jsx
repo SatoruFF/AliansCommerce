@@ -1,12 +1,13 @@
 import React from "react";
 import "../style/footer.scss";
-import { PhoneOutlined, MailOutlined, MessageFilled } from "@ant-design/icons";
+import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Typography } from "antd";
 import viber from "../assets/viber-white-icon.webp";
 import telegram from "../assets/telegram-white-icon.webp";
+import _ from "lodash-es";
 const { Paragraph } = Typography;
 
-const Footer = () => {
+const Footer = ({ search }) => {
   const contactsStyle = {
     color: "white",
   };
@@ -15,7 +16,10 @@ const Footer = () => {
     width: "auto",
   };
   return (
-    <div className="footer__wrapper">
+    <div
+      className="footer__wrapper"
+      style={!_.isEmpty(search) ? { display: "none" } : {}}
+    >
       <div className="footer__items">
         <div className="footer__item">
           <Button style={contactsStyleBtn} ghost>

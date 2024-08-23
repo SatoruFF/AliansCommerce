@@ -28,7 +28,7 @@ const Catalog = () => {
 
         <MyGallery redir={redir} search={search}></MyGallery>
       </div>
-      <MyFooter></MyFooter>
+      <MyFooter search={search}></MyFooter>
     </div>
   );
 };
