@@ -2,8 +2,6 @@ import React from "react";
 import "../style/contacts.scss";
 import { Typography } from "antd";
 
-import barcode from "../assets/barcode.jpeg";
-
 const { Title, Text } = Typography;
 
 const Contacts = () => {
@@ -20,11 +18,11 @@ const Contacts = () => {
           <div className="contacts__left-side animate__animated animate__fadeInLeft">
             <Typography style={{ marginBottom: "10px" }}>
               <Title level={3}>Контакты отдела продаж:</Title>
-              <Text style={{fontSize: "21px"}}>+7 917 270-09-99</Text>
+              <Text style={{ fontSize: "21px" }}>+7 917 270-09-99</Text>
               <br />
-              <Text style={{fontSize: "21px"}}>+7 980 915 80 49</Text>
+              <Text style={{ fontSize: "21px" }}>+7 980 915 80 49</Text>
               <br />
-              <Text style={{fontSize: "21px"}}>+7 980 915 72 36</Text>
+              <Text style={{ fontSize: "21px" }}>+7 980 915 72 36</Text>
               <br />
               <Title level={3}>Email:</Title>
               <Text copyable>alyansbum@mail.ru</Text>

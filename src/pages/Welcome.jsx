@@ -13,7 +13,7 @@ import { Button, Carousel, Typography } from "antd";
 import MyFooter from "../components/Footer.jsx";
 import { useNavigate } from "react-router-dom";
 import { CATALOG__ROUTE } from "../utils/consts.js";
-const { Title, Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -48,6 +48,24 @@ const Welcome = () => {
                     className="welcome_link-item"
                   >
                     +7 917 270 09 99
+                  </Paragraph>
+                </Button>
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    +7 980 915 80 49
+                  </Paragraph>
+                </Button>
+                <Button style={contactsStyleBtn} ghost>
+                  <Paragraph
+                    copyable
+                    style={contactsStyle}
+                    className="welcome_link-item"
+                  >
+                    +7 980 915 72 36
                   </Paragraph>
                 </Button>
                 <Button style={contactsStyleBtn} ghost>

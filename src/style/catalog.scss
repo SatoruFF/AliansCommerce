@@ -1,8 +1,16 @@
-@import '../utils/tmp.scss';
+@import "../utils/tmp.scss";
 
-.catalog__title {
-    @extend %titleBlock
+.catalog__wrapper {
+    height: 100%;
 }
 
+.catalog__title {
+    @extend %titleBlock;
+    justify-content: space-evenly;
+}
 
-
+.catalog__search {
+    box-sizing: border-box;
+    margin: 5px;
+    width: 30%;
+}

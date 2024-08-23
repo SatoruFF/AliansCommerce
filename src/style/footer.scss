@@ -1,4 +1,4 @@
-@import '../utils/tmp.scss';
+@import "../utils/tmp.scss";
 
 .footer__wrapper {
     height: 80px;
@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 992px) {
     .footer__wrapper {
         margin: 0px auto 0;
         height: auto;
